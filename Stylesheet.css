@@ -2,11 +2,25 @@
 /* CSS Document */
 
 
+/* Bagrunden/den brune farve til navigastionsbaren  */
+.sidehovde{
 
-/* --------------------------------------------------------------------- Og sådan her når det er CSS ----------------------------------------------------------*/
+	width: 1920px;
+	height: 315px;
+	
+	background: #7F524D;
+}
 
 
-/* Og sådan her selvføldig til indivisuel kode */
-.eksempel{
+/*   */
+.overskrift-skrald{
+	
+	top: 0px; 
+	left: 200px;
+	display: inline;
+	
+	font: bold normal normal 40px/53px Poppins;
+	
+	color: #548F45;
 }
 	
