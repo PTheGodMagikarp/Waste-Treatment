@@ -6,7 +6,7 @@
 <link rel="stylesheet" href="Stylesheet.css">
 	<script src="JavaScript.js"> </script>
 </head>
-<body>
+<body id="baggrund">
 	
 	
 	
@@ -15,17 +15,112 @@
 	
 	
 	<!------------------------------------------------------------ Sidehovde -------------------------------------------------------------->
-	
-	<div class="sidehovde"> 
-	
-	
-	
+	<!-- Bagrunden/den brune farve til navigastionsbaren -->
+	<div id="sidehovde"> 
+		
+		<!-- Overskriften der fortæler hvilken side man er på -->
+		<h1 id="overskrift"> Forbrug </h1>
+		
+		
+		<!---                                                         Ikoner                                                      ----->
+		
+		<!-- Forbrug ikonet på navigastionsbaren. Når man trykker på den, så skifter flere elementer "stadier", så de passer til forbrug siden -->
+		<button id="forbrugIkon" class="navigationsbarIkoner" OnClick="skiftTilForbrug()">
+			<img src="Billeder/Xd-billeder/Forbrug-ikon.png"
+						 width="118" height="69" alt="Skrald ikon"/>
+		</button>
+		
+		<!-- Skrald ikonet på navigastionsbaren. Når man trykker på den, så skifter flere elementer "stadier", så de passer til skrald siden -->
+		<button id="skraldIkon" class="navigationsbarIkoner"  OnClick="skiftTilSkrald()">
+			<img src="Billeder/Xd-billeder/Skrald-ikon.png"
+						 width="118" height="69" alt="Skrald ikon"/>
+		</button>
+		
+		<!-- Sotering ikonet på navigastionsbaren. Når man trykker på den, så skifter flere elementer "stadier", så de passer til sotering siden -->
+		<button id="soteringIkon" class="navigationsbarIkoner"  OnClick="skiftTilSotering()">
+			<img src="Billeder/Xd-billeder/Soterings-ikon.png"
+						 width="118" height="69" alt="Skrald ikon"/>
+		</button>
+		
+		<!-- Omdannelse ikonet på navigastionsbaren. Når man trykker på den, så skifter flere elementer "stadier", så de passer til omdannelse siden -->
+		<button id="omdannelseIkon" class="navigationsbarIkoner"  OnClick="skiftTilOmdannelse()">
+			<img src="Billeder/Xd-billeder/Genbrug-ikon.png"
+						 width="118" height="69" alt="Skrald ikon"/>
+		</button>
+		
+		<!-- Genadvendelse ikonet på navigastionsbaren. Når man trykker på den, så skifter flere elementer "stadier", så de passer til genadvendelse siden -->
+		<button id="genadvendelseIkon" class="navigationsbarIkoner"  OnClick="skiftTilGenadvendelse()">
+			<img src="Billeder/Xd-billeder/Genadvenelse-ikon.png"
+						 width="118" height="69" alt="Skrald ikon"/>
+		</button>
+		
+		<!-- Afbrænding ikonet på navigastionsbaren. Når man trykker på den, så skifter flere elementer "stadier", så de passer til afbraending siden -->
+		<button id="afbraendingIkon" class="navigationsbarIkoner"  OnClick="skiftTilAfbraending()">
+			<img src="Billeder/Xd-billeder/Afbrænding-ikon.png"
+						 width="118" height="69" alt="Skrald ikon"/>
+		</button>
+		
+		<!-- El ikonet på navigastionsbaren. Når man trykker på den, så skifter flere elementer "stadier", så de passer til el siden -->
+		<button id="elIkon" class="navigationsbarIkoner"  OnClick="skiftTilEl()">
+			<img src="Billeder/Xd-billeder/El-ikon.png"
+						 width="118" height="69" alt="Skrald ikon"/>
+		</button>
+		
 	</div>
-	<h1 class="overskrift-skrald"> Skrald </h1>
+		
 	
 	<!------------------------------------------------------------ Spil delen -------------------------------------------------------------->
 	
+	<!-- Billede af: Produkterne der bliver til skrald, og så langsomt fjernet -->
+	<img src="Billeder/Xd-billeder/Forbrugs-produkter.png"
+						 width="503" height="503" alt="Forbrugsprodukter" id="skraldOverTid"/>
 	
+	<!-- Faktaboxen der følger skraldets faser -->
+	<img src="Billeder/Xd-billeder/Rekonstrueret-Xd-billeder/Hel-Faktabox.png"
+						 width="420" height="420" alt="Hel faktabox" id="faktabox"/>
+	
+	<!-- Billede af plast for sig selv, der går fra skrald til nyt produkt -->
+	<img src="Billeder/Xd-billeder/Soteret-Plast.png"
+						 width="664" height="349" alt="Hel faktabox" id="plastOverTid"/>
+	
+	
+	
+	
+	<!-- Plast ikon -->
+	<button id="plastIkon" class="soteringsIkonerOgPile"  OnClick="skiftTilIngenPlast()">
+		<img src="Billeder/Xd-billeder/Flaske-ikon.png"
+						 width="19" height="53" alt="Plast ikon"/>
+	</button>
+	
+		<!-- Plast pil -->
+		<img src="Billeder/Xd-billeder/Rekonstrueret-Xd-billeder/Plast-Markerings-pil.png"
+						 width="40" height="19" alt="Pap ikon" id="plastPil" class="soteringsIkonerOgPile"/>
+	
+	
+	<!-- Metal ikon -->
+	<img src="Billeder/Xd-billeder/Metal-ikon.png"
+						 width="54" height="61" alt="Metal ikon" id="metalIkon" class="soteringsIkonerOgPile"/>
+		<!-- Metal pil -->
+		<img src="Billeder/Xd-billeder/Rekonstrueret-Xd-billeder/Metal-Markerings-pil.png"
+						 width="26" height="45" alt="Pap ikon" id="metalPil" class="soteringsIkonerOgPile"/>
+	
+	
+	<!-- Pap ikon -->
+	<img src="Billeder/Xd-billeder/Pap-ikon.png"
+						 width="54" height="59" alt="Pap ikon" id="papIkon" class="soteringsIkonerOgPile"/>
+		<!-- Pap pil -->
+		<img src="Billeder/Xd-billeder/Rekonstrueret-Xd-billeder/Pap-Markerings-pil.png"
+						 width="100" height="68,5" alt="Pap ikon" id="papPil" class="soteringsIkonerOgPile"/>
+	
+	
+	
+	
+	
+	
+	<!------------------------------------------------------------ billede generator -------------------------------------------------------------->
+	<!-- Faktaboxen der følger skraldets faser -->
+	<img src="Billeder/Xd-billeder/Plastik-flaske.png"
+						 width="1" height="1" alt="#" />
 	
 	
 	
