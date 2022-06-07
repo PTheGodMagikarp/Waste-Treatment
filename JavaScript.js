@@ -10,20 +10,99 @@ function skiftTilSkrald() {
 	
 	// Finder hvilket billede af skrald der er på siden nu. Hvis det er det rigtige billede iforhold til at forsætte "spillet", så eksekveres koden //
 	let billedeAfSkrald = document.getElementById("skraldOverTid");
-		if (billedeAfSkrald.src.match("Billeder/Xd-billeder/Forbrugs-produkter.png") || billedeAfSkrald.src.match("Billeder/Xd-billeder/Skrald.png") ){
+	if (billedeAfSkrald.src.match("Billeder/Xd-billeder/Forbrugs-produkter.png") || billedeAfSkrald.src.match("Billeder/Xd-billeder/Skrald.png") ){
 			
 			//  Skifter billedet og overskriften til at passe hvilken side brugeren er på  //
-			billedeAfSkrald.src = "Billeder/Xd-billeder/Skrald.png";
-			document.getElementById("overskrift").innerHTML = "Skrald"
+			
+			document.getElementById("overskrift").innerHTML = "Skrald";
 			
 			
-			// Går igennem alle elmenter der er tilæknyttet klassen "soteringsIkonerOgPile" og gemmer dem væk. //
+			// Går igennem alle elmenter (ikoner og pile) der er tilæknyttet klassen "soteringsIkonerOgPile" og gemmer dem væk. //
 			var soteringsElementer = document.getElementsByClassName("soteringsIkonerOgPile");
 				for (var i=0 ; i<soteringsElementer.length; i+=1){
   					soteringsElementer[i].style.display = "none";
 				}
 			
-		}			
+			
+		//                                    **Langsom skifter billede**                                 //	
+		
+		//*Skrald*//
+			
+			let tidSkraldOpacity = setInterval(OpacitySkrald, 100);
+			let opacitySkrald = 1;
+	
+				function OpacitySkrald() {
+					if (opacitySkrald <= 0) 
+					{
+						clearInterval(tidSkraldOpacity);
+					}
+					else {
+						opacitySkrald-= 0.1;
+						document.getElementById("skraldOverTid").style.opacity = opacitySkrald;
+					}
+				}
+		
+		
+			setTimeout(skiftSkrald, 1000);
+		
+			function skiftSkrald() {
+				billedeAfSkrald.src = "Billeder/Xd-billeder/Skrald.png";
+			
+			
+			let tidSkraldOpacity2 = setInterval(OpacitySkrald2, 100);
+				let opacitySkrald2 = 0;
+	
+					function OpacitySkrald2() {
+						if (opacitySkrald2 >= 1) 
+						{clearInterval(tidSkraldOpacity2);}
+						else {
+							opacitySkrald2 += 0.1;
+							document.getElementById("skraldOverTid").style.opacity = opacitySkrald2;
+						}
+					}
+		}
+	}
+	
+	
+	
+	
+
+	
+	
+	
+    
+
+        
+	
+	
+		
+	
+	
+	
+	
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 }
 
 
@@ -48,7 +127,7 @@ function skiftTilSotering() {
 }
 
 
-
+// Skifter til Soterings siden uden plast i affaldet, når brugeren trykker på plasr ikonet  //
 function skiftTilIngenPlast() {
 	
 	// Skifter billedet af skrald til det samme billede, men uden plast; og viser så billede af soteret plast //

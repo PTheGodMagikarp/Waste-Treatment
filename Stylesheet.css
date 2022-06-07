@@ -25,8 +25,14 @@
 	color: #548F45;
 }
 
+/* Overskriften der fortæler hvilken side man er på  */
+#Logo-sidehovde{
+	top: 90px;
+	left: 60px;
+}
+
 /* Alle ikoner på navigastionsbarens fælles klasse  */
-.navigationsbarIkoner{
+.navigationsbarLogoOgIkoner{
 	position: absolute;
 	
 	background: none;
