@@ -41,45 +41,45 @@
 }
 
 /* Forbrug ikonet på navigastionsbaren. Når man trykker på den, så skifter flere elementer "stadier", så de passer til forbrug siden  */
-#forbrugIkon{
+#forbrug-ikon{
 	top: 90px;
 	left: 453px;
 }
 
 /* Skrald ikonet på navigastionsbaren. Når man trykker på den, så skifter flere elementer "stadier", så de passer til skrald siden  */
-#skraldIkon{
+#skrald-ikon{
 	top: 90px;
 	left: 600px;
 }
 
 
 /* Sotering ikonet på navigastionsbaren. Når man trykker på den, så skifter flere elementer "stadier", så de passer til sotering siden  */
-#soteringIkon{
+#sotering-ikon{
 	top: 90px;
 	left: 750px;
 }
 
 
 /* Omdannelse ikonet på navigastionsbaren. Når man trykker på den, så skifter flere elementer "stadier", så de passer til omdannelse siden  */
-#omdannelseIkon{
+#omdannelse-ikon{
 	top: 90px;
 	left: 900px;
 }
 
 /* Genadvendelse ikonet på navigastionsbaren. Når man trykker på den, så skifter flere elementer "stadier", så de passer til genadvendelse siden  */
-#genadvendelseIkon{
+#genadvendelse-ikon{
 	top: 90px;
 	left: 1050px;
 }
 
 /* Afbrænding ikonet på navigastionsbaren. Når man trykker på den, så skifter flere elementer "stadier", så de passer til afbrænding siden  */
-#afbraendingIkon{
+#afbraending-ikon{
 	top: 90px;
 	left: 1200px;
 }
 
 /* El ikonet på navigastionsbaren. Når man trykker på den, så skifter flere elementer "stadier", så de passer til el siden  */
-#elIkon{
+#el-ikon{
 	top: 90px;
 	left: 1350px;
 }
@@ -87,7 +87,7 @@
 /* --------------------------------------------------------------------- Interaktion del ----------------------------------------------------------*/
 
 /* Billede af: Produkterne der bliver til skrald, og så langsomt fjernet  */
-#skraldOverTid{
+.skraldOverTid{
 	position: absolute;
 	top: 330px;
 	left: 400px;
@@ -100,21 +100,23 @@
 	left: 1000px;
 }
 
-#plastOverTid{
+.plastOverTid{
 	position: absolute;
 	top: 410px;
 	left: 700px;
 	display: none;
+	opacity: 0;
 }
 
 /* Ikoner og deres tilhørene pile fra soterings siden */
 .soteringsIkonerOgPile{
 	position: absolute;
 	display: none;
+	opacity: 0;
 }
 
 /* Plast ikon */
-#plastIkon{
+#plast-ikon{
 	top: 770px;
 	left: 350px;
 	
@@ -131,7 +133,7 @@
 
 
 /* Metal ikon */
-#metalIkon{
+#metal-ikon{
 	top: 860px;
 	left: 700px;
 }
@@ -144,7 +146,7 @@
 
 
 /* Pap ikon */
-#papIkon{
+#pap-ikon{
 	top: 630px;
 	left: 930px;
 }
