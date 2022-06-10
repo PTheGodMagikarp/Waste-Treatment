@@ -2,21 +2,8 @@
 
 
 
-//---------------------------------------------------------------------------   -----------------------------------------------------------------------//
 
-// Skifter tilbage til forsiden når brugeren trykker på logoet  //
-function skiftTilSkrald(){
-	
-	
-	
-	
-	
-	
-	
-}
-
-
-
+//--------------------------------------------------------------------------- Skrald  -----------------------------------------------------------------------//
 
 // Skifter til Skrald siden når brugeren trykker på skrald ikonet //
 function skiftTilSkrald() {
@@ -109,7 +96,7 @@ function skiftTilSkrald() {
 	}
 }
 
-
+//--------------------------------------------------------------------------- Sotering  -----------------------------------------------------------------------//
 
 // Skifter til Soterings siden når brugeren trykker på soterings ikonet  //
 function skiftTilSotering() {
@@ -156,6 +143,7 @@ function skiftTilSotering() {
 	}			
 }
 
+//--------------------------------------------------------------------------- Sotering uden plast  -----------------------------------------------------------------------//
 
 // Skifter til Soterings siden uden plast i affaldet, når brugeren trykker på plasr ikonet  //
 function skiftTilIngenPlast() {
@@ -356,9 +344,9 @@ function skiftTilIngenPlast() {
 		
 	
 	
+//--------------------------------------------------------------------------- Omdanelse  -----------------------------------------------------------------------//
 
-
-// Skifter til Skrald siden når brugeren trykker på skrald ikonet //
+// Skifter til Omdanelse siden når brugeren trykker på Omdanelse ikonet //
 function skiftTilOmdannelse() {
 
 	
@@ -410,6 +398,7 @@ function skiftTilOmdannelse() {
 	
 
 
+//--------------------------------------------------------------------------- Genadvendelse  -----------------------------------------------------------------------//
 
 // Skifter til Genadvendelse siden når brugeren trykker på Genadvendelse ikonet //
 function skiftTilGenadvendelse() {
@@ -600,27 +589,26 @@ function skiftTilGenadvendelse() {
 
 
 
-//--------------------------------------------------------------------------- Skabelon  -----------------------------------------------------------------------//
+//--------------------------------------------------------------------------- Tekst delen  -----------------------------------------------------------------------//
 
-//   //
-function skabelon() {
+
+//SKIFT IMELLEM TEKSTEN I DROP DOWN MENUEN
+
+function openprogram(evt, programName) {
 	
-	let sideOverskrift = document.getElementById("overskrift")
-	var billedeAfSkrald = document.getElementById("skraldOverTid");
+  //Vi deklarerer 3 var variabler; i, menuIndhold og tablinks
+  var i, menuIndhold, tablinks;
 	
-		if (sideOverskrift.innerHTML.match("Forbrug") && billedeAfSkrald.src.match("Billeder/Xd-billeder/Forbrugs-produkter.png")){
-			
-			sideOverskrift.innerHTML = "Skrald"
-			billedeAfSkrald.src = "Billeder/Xd-billeder/Skrald.png";
-			billedeAfSkrald.width = "100";
-			billedeAfSkrald.height = "100";
-			billedeAfSkrald.style.top = "0px";
-			billedeAfSkrald.src = "Billeder/Xd-billeder/Skrald.png";
-			
-			// Går igennem alle elmenter der er tilæknyttet klassen "soteringsIkonerOgPile" og viser dem på skærmen. 
-			var soteringsElementer = document.getElementsByClassName("soteringsIkonerOgPile");
-				for (var i=0 ; i<soteringsElementer.length; i+=1){
-  					soteringsElementer[i].style.display = "block";
-				}
-		}		
+  //Her indsætter vi variablen menuIndholds værdi som værene document.getElementsByClassName("menuIndhold")
+  menuIndhold = document.getElementsByClassName("menuIndhold");
+	
+  //Sørger for at teksten i tekstboksen bliver erstattet af den nye tekst når en knap bliver trykket, i steddet for at blive skrevet under, hvilket resulterer i en større og større tekstboks
+  //For loopet sørger for at koden indenfor dets curly brackets kun kører en gang
+  for (i = 0; i < menuIndhold.length; i++) {
+  menuIndhold[i].style.display = "none";
+  }
+
+  //Sørger for at teksten dukker op i tekstboksen når funktionen bliver kaldt, når man trykker på en knap
+  document.getElementById(programName).style.display = "block";
+  evt.currentTarget.className += " active";
 }

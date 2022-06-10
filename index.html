@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Skrald</title>
+<title>Waste Treatment</title>
 <link rel="stylesheet" href="Stylesheet.css">
 	<script src="JavaScript.js"> </script>
 	
@@ -11,7 +11,9 @@
 	<link href="https://fonts.googleapis.com/css2?family=Fanwood+Text&family=Palanquin&family=Poppins&display=swap" rel="stylesheet">
 	
 </head>
-<body id="baggrund">
+	
+	<!-- AKTIVER SCRIPTET DER VISER TEKST I DROP DOWN MENUEN, SOM SØRGER FOR AT 'FAKTA OM DEPONI' ALTID ÅBNER OP FRA START -->
+<body id="baggrund" onload="openprogram(event, 'infoDeponi')">
 	
 	
 	<!------------------------------------------------------------ Sidehovde -------------------------------------------------------------->
@@ -129,10 +131,125 @@
 	
 	
 	
-	<!------------------------------------------------------------ billede generator -------------------------------------------------------------->
-	<!-- Faktaboxen der følger skraldets faser -->
-	<img src="Billeder/Xd-billeder/Plastik-flaske.png"
-						 width="1" height="1" alt="#" />
+	<!------------------------------------------------------------ Tekst delen -------------------------------------------------------------->
+	
+	
+	
+	<!-- Opsætningen af selve tekstboksen -->     
+<div class="tab">
+ 
+
+	
+
+
+  <!-- KNAPPERNE I DROP DOWN MENUEN -->
+  <button onclick="openprogram(event, 'infoDeponi')"> <a>Fakta om Deponi</a></button>
+  <button class="tablinks" onclick="openprogram(event, 'infoPlastik')"> <a>Sortering af Plastik</a></button>
+  <button onclick="openprogram(event, 'infoMetal')"> <a>Sortering af metal</a></button>
+  <button onclick="openprogram(event, 'infoPap')"> <a>Sortering af pap</a></button>
+    
+
+	
+
+<!--                             ALT TEKSTEN I DROP DOWN MENUEN. FUNKTIONERNE I JAVASCRIPT DOKUMENTET SKIFTER IMELLEM TEKSTEN                           -->
+	
+	
+
+	
+	<!-- FAKTA OF DEPONI -->
+
+
+	<div id="infoDeponi" class="menuIndhold">
+  		<h3>Fakta om Deponi</h3>
+  		<p>Omkring 40.000 tons dansk husholdningsaffald deponeres årligt, da ingen ved hvad man skal gøre ved det, eller venter på teknologien til at kunne forarbejde det. Når man deponere, anbringer man affaldsmateriale i depoter, typisk i jorden i en tidsperiode, isoleret af ler eller beton. I særligt farligt affald installeres mekanikker som sørger for at giftstofferne affaldet udleder bliver renset. 
+			<br><br>
+		Med deponi er den mindst gavnlige måde at behandle affald, da både råstofferne, og den energi der kunne komme af dem, går tabt, når affaldet hverken gives nyt liv eller brændes, men graves ned. Vores viden og teknologi har udviklet sig meget siden man begyndte at deponere, og i dag er det derfor  muligt at grave affaldet op og bruge det til noget nyttigt. Derfor har vi anskaffet teknologien til at grave deponier op, så affaldet ikke går til spilde, eller forurener miljøet.
+		</p>
+	</div>
+    
+	
+		
+		
+<!-- SORTERING AF PLASTIK -->
+	<div id="infoPlastik" class="menuIndhold">
+ 		<h3>Sortering af Plastik</h3>
+ 		 <p>På genbrugsstationerne kan man aflevere fire forskellige plasttyper: Hård PVC, havemøbler, plastfolie og hård plast. Plasten sorteres og pakkes. Hver af plasttyperne sendes videre til forskellige anlæg, alt efter hvilken plasttype det anlæg specialiserer sig i. Plasten vaskes, tørres og findeles til granulat, som man kan lave nyt plast af. 
+			 <br><br>
+  		<b>Ting som ikke må sorteres som plast:</b>
+			 <br>
+  		Det er dog ikke alt plastik der kan genanvendes. Her viser vi nogle af dem som man måske ikke tænker på faktisk er farligt: <br><br>
+	  
+  		<b>Tomme håndsprit-flasker</b>
+			 <br>
+  		Selv om håndspritflasken er tom, kan der godt sidde små spritrester i, og det gør flasken brandfarlig. Derfor skal den sorteres som farligt affald.<br><br>
+
+
+		<b>Flasker og beholdere til skrappe rengøringsmidler eller insektbekæmpelse</b>
+			 <br>
+   		Selv om din afløbsrens eller myregift er i en plastikflaske, skal det sorteres som farligt affald, fordi der kan være rester af de skrappe midler i. Så er der et faresymbol på flasken, skal den sorteres som farligt affald. Du må dog gerne lægge plastflasker og -beholdere med orange kryds eller udråbstegn - fx opvaskemiddel - i plastbeholderen.
+		</p>
+	</div>
+	
+	
+	
+	
+	
+	<!-- SORTERING AF METAL -->
+	<div id="infoMetal" class="menuIndhold">
+   		<h3>Sortering af metal</h3>
+   		<p>Der er mange lokale og regionale aftagere af jern- og metalaffald i Danmark. Fra små produkthandlere til store modtageanlæg. Men den største mængde metal, som vi indsamler, sendes til genanvendelse i udlandet. Det sorterede jern og metal ender således med at blive genanvendt og brugt i produktion af nyt jern og metal på smelteværker enten i Danmark eller i udlandet.
+			<br><br>
+
+   		Sorteringen sker ved mere eller mindre automatisk sortering med afsluttende manuel finsortering. <br><br>
+
+   		Selv det jern og metal, der ender på landets forbrændingsanlæg, frasorteres og genanvendes i et vist omfang. Men metal fra forbrændingsanlægget slagge har ikke så god kvalitet, og det er et stort problem når metaller smelter sig fast i forbrændingsanlæggene. Derfor er det en klar fordel at metallet udsorteres direkte til genanvendelse.
+			<br><br>
+	  
+   		<b>Ting som godt kan sorteres som metal:</b>
+			<br>
+  		 Øl- og sodavandsdåser også uden pant, konservesdåser, gryder, potter, pander, trillebøre, cykler, osv. Metal afleveres normalt på genbrugspladsen i en container til metal.
+  		</p>
+	</div>
+
+    
+	
+	
+	
+	
+	<!-- SORTERING AF PAP -->
+	<div id="infoPap" class="menuIndhold">
+   		<h3>Sortering af pap</h3>
+		
+   		<p>
+
+   		Cellulosefibrene som pap er opbygget af, kan genanvendes 5-6 gang, før de er slidt og dermed blevet for korte til at indgå i nyt pap.
+			<br><br>
+
+   		Genanvendelsen foregår populært sagt ved at returpappet opslemmes i vand og omdannes til en grød af fibre under omrøring i en pulper. I pulperen fjernes også metalclips, limrester og andre fremmedlegemer. Bøger kræver en særlig udviklet pulper for at kunne genanvedes, så derfor indsamles de i en særskilt fraktion.<br>
+	
+   		</p>
+		
+  		<p> 
+   		For at sortere pap, skal være tørt og fri for madrester. Buk, fold, skær eller stamp dit pap, så det fylder mindst muligt. 
+			<br><br>
+
+   		<b>Ting som ikke kan sorteres som pap:</b> 
+			<br>
+  		 Papir samt Pizzabakker eller anden emballage med madrester og snasket pap skal smides i restaffald
+   		</p>
+	</div>
+	
+
+	
+
+		
+	
+	
+	
+	
+	
+</div>
+
 	
 	
 	
