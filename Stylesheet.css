@@ -5,12 +5,16 @@
 	background: #FFFCEB
 }
 
+
+
+
 /* --------------------------------------------------------------------- Sidehovde ----------------------------------------------------------*/
 /* Bagrunden/den brune farve til navigastionsbaren  */
 #sidehovde{
+	position: absolute;
 	top: -1px;
 	left: -1px;
-	position: absolute;
+	
 	width: 1921px;
 	height: 251px;
 	
@@ -28,9 +32,17 @@
 }
 
 /* Overskriften der fortæler hvilken side man er på  */
-#LogoSidehovde{
+#logoSidehovde{
 	top: 97px;
 	left: 60px;
+	
+	width: 250px;
+	height: 74px;
+}
+#logoSidehovde2{
+
+	width: 250px;
+	height: 74px;
 }
 
 /* Alle ikoner på navigastionsbarens fælles klasse  */
@@ -196,6 +208,9 @@
 	position: absolute;
 	top: 330px;
 	left: 400px;
+	
+	width: 503px;
+	height: 503px;
 }
 
 /* Faktaboxen der følger skraldets faser */
@@ -203,6 +218,9 @@
 	position: absolute;
 	top: 375px;
 	left: 1000px;
+	
+	width: 420px;
+	height: 420px;
 }
 
 .plastOverTid{
@@ -299,13 +317,17 @@
     padding-left: 5%;                      /* Afstanden imellem højre side af tekstboksen og teksten */
 	padding-right: 5%;                     /* Afstanden imellem venstre side af tekstboksen og teksten */
 	padding-bottom:5%;                     /* Afstanden imellem bunden af tekstboksen og teksten */
-    background-color:#548f45;              /* Baggrundsfarven af tekstboksen */
+	
     margin-top: 50%;                       /* Afstanden imellem boksen og toppen af hjemmesidens kant */
 	margin-bottom: 5%;					   /* Afstanden imellem boksen og bunden af hjemmesidens kant */
 	margin-right:20%;                      /* Afstanden imellem boksen og højre side af hjemmesidens kant */
 	margin-left:20%;                       /* afstand fra boxen og venstre side af hjemmesidens kant*/
+	
     border-radius: 3px;                    /* Afrunder hjørnerne på boksen */
+	
+	background-color:#548f45;              /* Baggrundsfarven af tekstboksen */
     color: #fffceb;                        /* Farven af overteksten */
+	
 }
 
 
@@ -358,7 +380,164 @@
 
 
 
+/* --------------------------------------------------------------------- Mobil version ----------------------------------------------------------*/
+@media screen and (max-width: 428px) {
+	
+	#sidehovde{
+		top: -1px;
+		left: -1px;
+	
+		width: 428px;
+		height: 120px;
+	}
+	
+	#overskrift{
+		top: -7px;
+		left: 255px;
 
+		font: normal normal normal 25px/27px 'Poppins', sans-serif;
+	}
+	
+	#logoSidehovde{
+		top: 37px;
+		left: 35px;
+		
+		width: 166.666666667px;
+		height: 49.3333333333px;
+	}
+	
+	#logoSidehovde2{
+		width: 166.666666667px;
+		height: 49.3333333333px;
+	}
+
+	
+	
+	
+	
+	
+	
+	
+	/***                                                                           Ikoner                                                                  ****/ 
+	#forbrugUnderoverskrift{
+		display: none;
+	}
+	#forbrugIkon{
+		top: 38px;
+		left: 265px;
+	}
+
+
+	#skraldPil{
+		display: none;
+	}
+	#skraldUnderoverskrift{
+		display: none;
+	}
+	#skraldIkon{
+		display: none;
+	}
+	#soteringPil{
+		display: none;
+	}
+#soteringUnderoverskrift{
+	display: none;
+}
+#soteringIkon{
+	display: none;
+}
+#omdannelsePil{
+	display: none;
+}
+#omdannelsePil2{
+	display: none;
+}
+#omdannelseUnderoverskrift{
+	display: none;
+}
+#omdannelseIkon{
+	display: none;
+}
+#genadvendelsePil{
+	display: none;
+}
+#genadvendelseUnderoverskrift{
+	display: none;
+}
+#genadvendelseIkon{
+	display: none;
+}
+#afbraendingPil{
+	display: none;
+}
+#afbraendingUnderoverskrift{
+	display: none;
+}
+#afbraendingIkon{
+	display: none;
+}
+#elPil{
+	display: none;
+}
+#elUnderoverskrift{
+	display: none;
+}
+#elIkon{
+	display: none;
+}
+	
+	/***                                                                           Spil delen                                                                  ****/ 
+	
+	/* Billede af: Produkterne der bliver til skrald, og så langsomt fjernet  */
+.skraldOverTid{
+	top: 175px;
+	left: 70px;
+	
+	width: 280px;
+	height: 280px;
+}
+
+/* Faktaboxen der følger skraldets faser */
+#faktabox{
+	top: 540px;
+	left: 80px;
+	
+	width: 250px;
+	height: 250px;
+}
+	
+	/***                                                                           Tekst delen                                                                  ****/ 
+	
+	
+	/* Ændre placering og størelse af bagrunden */
+	.tab {	
+   		margin-top: 237%;                       /* Afstanden imellem boksen og toppen af hjemmesidens kant */
+		margin-bottom: 10%;					   /* Afstanden imellem boksen og bunden af hjemmesidens kant */
+		margin-right: 5%;                      /* Afstanden imellem boksen og højre side af hjemmesidens kant */
+		margin-left: 5%;                       /* afstand fra boxen og venstre side af hjemmesidens kant*/
+	}
+	
+	/* Gør plads til knapperne så de kan være 2 sammen pr. linje */  
+	.tab button {
+		margin-right:5px;                     /* Afstanden imellem de 4 knapper */ 
+		margin-left:0px;
+    	padding: 4px 10px;                     /* Sætter afstanden fra knappens kanter og knappens tekst */
+    	font-size: 17px;                       /* Sætter størrelsen på teksten */
+	}
+	
+	/* Rykker overskriften og brødteksten lidt længere ned */ 
+	.menuIndhold h3 {
+ 		margin-top: 10%;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+}
 
 
 

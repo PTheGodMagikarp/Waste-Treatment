@@ -25,8 +25,8 @@
 		
 		
 		
-		<!-- Logo -->
-<button id="LogoSidehovde"                class="navigationsbarLogoOgIkoner" OnClick="skiftTilForside()">      	<img src="Billeder/Logo/logo med baggrund.png" width="250" height="74" alt="Firma logo"/></button> 
+		<!-- Logo: Kanppen og selve billede har begge et id. Dette skyldes at breden og højden skal ændre sig når sidens brede når mobil størelse. Derfor skal det breden oghøjden være defineret i CSS. Id'et i knappen ændre kun størelse på selve knappen, så billedet skal have sit eget id for også at blive påvirket af widt og heigt propeties. -->
+<button id="logoSidehovde"                class="navigationsbarLogoOgIkoner" OnClick="skiftTilForside()">      	<img src="Billeder/Logo/logo med baggrund.png"  alt="Firma logo" id="logoSidehovde2" /></button> 
 
 		<!---                                                         Ikoner                                                      ----->
 		
@@ -36,102 +36,91 @@
 
 		
 <!-- Skrald ikonet på navigastionsbaren. Når man trykker på den, så skifter flere elementer "stadier", så de passer til skrald siden -->
-<button id="skraldPil"                    class="navigationsbarLogoOgIkoner" OnClick="skiftTilForbrug()"> 		<img src="Billeder/Ikoner/Pile/pil1.png" width="84.8" height="51" alt="Pil"/> 	 </button>
+<button id="skraldPil"                    class="navigationsbarLogoOgIkoner" OnClick="skiftTilForbrug()"> 		<img src="Billeder/Ikoner/Pile/pil1.png" width="84.8" height="51" alt="Pil"/> 	         </button>
 <button id="skraldUnderoverskrift"        class="navigationsbarLogoOgIkoner" OnClick="skiftTilSkrald()">		<h2> Skrald </h2> 																		 </button>
 <button id="skraldIkon"                   class="navigationsbarLogoOgIkoner" OnClick="skiftTilSkrald()">		<img src="Billeder/Ikoner/Skrald.png" width="80" height="80" alt="Skrald ikon"/> 		 </button>
 		
 <!-- Sotering ikonet på navigastionsbaren. Når man trykker på den, så skifter flere elementer "stadier", så de passer til sotering siden -->
-<button id="soteringPil"                  class="navigationsbarLogoOgIkoner" OnClick="skiftTilForbrug()"> 		<img src="Billeder/Ikoner/Pile/pil1.png" width="84.8" height="51" alt="Pil"/> 	 </button>
+<button id="soteringPil"                  class="navigationsbarLogoOgIkoner" OnClick="skiftTilForbrug()"> 		<img src="Billeder/Ikoner/Pile/pil1.png" width="84.8" height="51" alt="Pil"/> 	 		 </button>
 <button id="soteringUnderoverskrift"      class="navigationsbarLogoOgIkoner" OnClick="skiftTilSotering()">		<h2> Sotering </h2> 																	 </button>
 <button id="soteringIkon"                 class="navigationsbarLogoOgIkoner" OnClick="skiftTilSotering()"> 		<img src="Billeder/Ikoner/Sortering.png" width="80" height="80" alt="Sotering ikon"/> 	 </button>
 		
 <!-- Omdannelse ikonet på navigastionsbaren. Når man trykker på den, så skifter flere elementer "stadier", så de passer til omdannelse siden -->
-<button id="omdannelsePil"                class="navigationsbarLogoOgIkoner" OnClick="skiftTilForbrug()"> 		<img src="Billeder/Ikoner/Pile/pil1.png" width="84.8" height="51" alt="Pil"/> 	 </button>
-<button id="omdannelsePil2"               class="navigationsbarLogoOgIkoner" OnClick="skiftTilForbrug()"> 		<img src="Billeder/Ikoner/Pile/pil1.png" width="28.2666666667" height="35" alt="Pil"/></button>
+<button id="omdannelsePil"                class="navigationsbarLogoOgIkoner" OnClick="skiftTilForbrug()"> 		<img src="Billeder/Ikoner/Pile/pil1.png" width="84.8" height="51" alt="Pil"/> 	 		 </button>
+<button id="omdannelsePil2"               class="navigationsbarLogoOgIkoner" OnClick="skiftTilForbrug()"> 		<img src="Billeder/Ikoner/Pile/pil1.png" width="28.2666666667" height="35" alt="Pil"/>	 </button>
 <button id="omdannelseUnderoverskrift"    class="navigationsbarLogoOgIkoner" OnClick="skiftTilOmdannelse()">	<h2> Omdannelse </h2> 																	 </button>
 <button id="omdannelseIkon"               class="navigationsbarLogoOgIkoner" OnClick="skiftTilOmdannelse()">	<img src="Billeder/Ikoner/Omdannelse.png" width="80" height="80" alt="Omdannelse ikon"/> </button>
 		
 <!-- Genadvendelse ikonet på navigastionsbaren. Når man trykker på den, så skifter flere elementer "stadier", så de passer til genadvendelse siden -->
-<button id="genadvendelsePil"             class="navigationsbarLogoOgIkoner" OnClick="skiftTilForbrug()"> 		<img src="Billeder/Ikoner/Pile/pil1.png" width="84.8" height="51" alt="Pil"/> 	 </button>
+<button id="genadvendelsePil"             class="navigationsbarLogoOgIkoner" OnClick="skiftTilForbrug()"> 		<img src="Billeder/Ikoner/Pile/pil1.png" width="84.8" height="51" alt="Pil"/> 	 		 </button>
 <button id="genadvendelseUnderoverskrift" class="navigationsbarLogoOgIkoner" OnClick="skiftTilGenadvendelse()"> <h2> Genadvendelse </h2> 																 </button>
 <button id="genadvendelseIkon"            class="navigationsbarLogoOgIkoner" OnClick="skiftTilGenadvendelse()"> <img src="Billeder/Ikoner/Genanvendelse.png" width="106,506986028" height="80" alt="Genadvendelse ikon"/></button>
 		
 <!-- Afbrænding ikonet på navigastionsbaren. Når man trykker på den, så skifter flere elementer "stadier", så de passer til afbraending siden -->
-<button id="afbraendingPil"               class="navigationsbarLogoOgIkoner" OnClick="skiftTilForbrug()">   	<img src="Billeder/Ikoner/Pile/pil1.png" width="84.8" height="51" alt="Pil"/> 	 </button>
+<button id="afbraendingPil"               class="navigationsbarLogoOgIkoner" OnClick="skiftTilForbrug()">   	<img src="Billeder/Ikoner/Pile/pil1.png" width="84.8" height="51" alt="Pil"/> 	 		 </button>
 <button id="afbraendingUnderoverskrift"   class="navigationsbarLogoOgIkoner" OnClick="skiftTilAfbraending()">   <h2> Afbraending </h2> 																	 </button>
 <button id="afbraendingIkon"              class="navigationsbarLogoOgIkoner" OnClick="skiftTilAfbraending()">  	<img src="Billeder/Ikoner/Afbrændning.png" width="80" height="80" alt="Afbraending ikon"/></button>
 		
 <!-- El ikonet på navigastionsbaren. Når man trykker på den, så skifter flere elementer "stadier", så de passer til el siden -->
-<button id="elPil"                   	  class="navigationsbarLogoOgIkoner" OnClick="skiftTilForbrug()"> 		<img src="Billeder/Ikoner/Pile/pil1.png" width="84.8" height="51" alt="Pil"/> 	 </button>
+<button id="elPil"                   	  class="navigationsbarLogoOgIkoner" OnClick="skiftTilForbrug()"> 		<img src="Billeder/Ikoner/Pile/pil1.png" width="84.8" height="51" alt="Pil"/> 	 		 </button>
 <button id="elUnderoverskrift"            class="navigationsbarLogoOgIkoner" OnClick="skiftTilEl()">		    <h2> El </h2> 																		 	 </button>
 <button id="elIkon"                       class="navigationsbarLogoOgIkoner" OnClick="skiftTilEl()"> 		    <img src="Billeder/Ikoner/El.png" width="80" height="80" alt="El ikon"/> 				 </button>
 		
 	</div>
 		
 	
-	<!------------------------------------------------------------ Spil delen -------------------------------------------------------------->
+	<!-------------------------------------------------------------------------------------- Spil delen ------------------------------------------------------------------------->
 	
-	<!-- Billede af: Produkterne der bliver til skrald, og så langsomt fjernet -->
-	<img src="Billeder/Xd-billeder/Forbrugs-produkter.png"
-						 width="503" height="503" alt="Forbrugsprodukter" class="skraldOverTid"/>
 	
-	<!-- Billede af: Produkterne der bliver til skrald, og så langsomt fjernet -->
-	<img src="Billeder/Xd-billeder/Forbrugs-produkter.png"
-						 width="503" height="503" alt="Forbrugsprodukter" class="skraldOverTid"/>
+	<!--         																			"Spil elementer"              														-->
 	
+	<!-- Billede 0 af: Produkterne der bliver til skrald, og så langsomt fjernet -->
+	<img src="Billeder/Xd-billeder/Forbrugs-produkter.png" alt="Forbrugsprodukter" class="skraldOverTid"/>
+	
+	<!-- Billede 1 af: Produkterne der bliver til skrald, og så langsomt fjernet -->
+	<img src="Billeder/Xd-billeder/Forbrugs-produkter.png" alt="Forbrugsprodukter" class="skraldOverTid"/>
 	
 	
 	
 	<!-- Faktaboxen der følger skraldets faser -->
-	<img src="Billeder/Xd-billeder/Rekonstrueret-Xd-billeder/Hel-Faktabox.png"
-						 width="420" height="420" alt="Hel faktabox" id="faktabox"/>
+	<img src="Billeder/Xd-billeder/Rekonstrueret-Xd-billeder/Hel-Faktabox.png"  alt="Hel faktabox" id="faktabox"/>
 	
 	
+	<!-- Billede 0 af plast for sig selv, der går fra skrald til nyt produkt -->
+	<img src="Billeder/Xd-billeder/Soteret-Plast.png" width="664" height="349" alt="Hel faktabox" class="plastOverTid"/>
+	
+	<!-- Billede 1 af plast for sig selv, der går fra skrald til nyt produkt -->
+	<img src="Billeder/Xd-billeder/Soteret-Plast.png" width="664" height="349" alt="Hel faktabox" class="plastOverTid"/>
 	
 	
-	<!-- Billede af plast for sig selv, der går fra skrald til nyt produkt -->
-	<img src="Billeder/Xd-billeder/Soteret-Plast.png"
-						 width="664" height="349" alt="Hel faktabox" class="plastOverTid"/>
-	
-	<!-- Billede af plast for sig selv, der går fra skrald til nyt produkt -->
-	<img src="Billeder/Xd-billeder/Soteret-Plast.png"
-						 width="664" height="349" alt="Hel faktabox" class="plastOverTid"/>
-	
-	
-	
+	<!--         																			Soterings sidens ikoner og pile             														-->
 	
 	<!-- Plast ikon -->
-	<button id="plastIkon" class="soteringsIkonerOgPile"  OnClick="skiftTilIngenPlast()">
-		<img src="Billeder/Ikoner/Soterings-Ikoner/plast.png"
-						 width="55" height="55" alt="Plast ikon"/>
-	</button>
+	<button id="plastIkon" class="soteringsIkonerOgPile" OnClick="skiftTilIngenPlast()">		<img src="Billeder/Ikoner/Soterings-Ikoner/plast.png" width="55" height="55" alt="Plast ikon"/>         </button>
 	
 		<!-- Plast pil -->
-		<img src="Billeder/Xd-billeder/Rekonstrueret-Xd-billeder/Plast-Markerings-pil.png"
-						 width="80" height="19" alt="Pap ikon" id="plastPil" class="soteringsIkonerOgPile"/>
+		<img src="Billeder/Xd-billeder/Rekonstrueret-Xd-billeder/Plast-Markerings-pil.png" width="80" height="19" alt="Pap ikon" id="plastPil" class="soteringsIkonerOgPile"/>
 	
 	
 	<!-- Metal ikon -->
-	<img src="Billeder/Ikoner/Soterings-Ikoner/jern.png"
-						 width="55" height="55" alt="Metal ikon" id="metalIkon" class="soteringsIkonerOgPile"/>
+	<img src="Billeder/Ikoner/Soterings-Ikoner/jern.png" width="55" height="55" alt="Metal ikon" id="metalIkon" class="soteringsIkonerOgPile"/>
+		
 		<!-- Metal pil -->
-		<img src="Billeder/Xd-billeder/Rekonstrueret-Xd-billeder/Jern-Markerings-pil.png"
-						 width="26" height="45" alt="Pap ikon" id="metalPil" class="soteringsIkonerOgPile"/>
+		<img src="Billeder/Xd-billeder/Rekonstrueret-Xd-billeder/Jern-Markerings-pil.png" width="26" height="45" alt="Pap ikon" id="metalPil" class="soteringsIkonerOgPile"/>
 	
 	
 	<!-- Pap ikon -->
-	<img src="Billeder/Ikoner/Soterings-Ikoner/pap.png"
-						 width="55" height="55" alt="Pap ikon" id="papIkon" class="soteringsIkonerOgPile"/>
+	<img src="Billeder/Ikoner/Soterings-Ikoner/pap.png" width="55" height="55" alt="Pap ikon" id="papIkon" class="soteringsIkonerOgPile"/>
+		
 		<!-- Pap pil -->
-		<img src="Billeder/Xd-billeder/Rekonstrueret-Xd-billeder/Pap-Markerings-pil.png"
-						 width="50" height="68.5" alt="Pap ikon" id="papPil" class="soteringsIkonerOgPile"/>
+		<img src="Billeder/Xd-billeder/Rekonstrueret-Xd-billeder/Pap-Markerings-pil.png" width="50" height="68.5" alt="Pap ikon" id="papPil" class="soteringsIkonerOgPile"/>
 	
 	
 	
 	
 	
 	
-	<!------------------------------------------------------------ Tekst delen -------------------------------------------------------------->
+	<!-------------------------------------------------------------------------------- Tekst delen ----------------------------------------------------------------------->
 	
 	
 	
@@ -143,10 +132,10 @@
 
 
   <!-- KNAPPERNE I DROP DOWN MENUEN -->
-  <button onclick="openprogram(event, 'infoDeponi')"> <a>Fakta om Deponi</a></button>
-  <button class="tablinks" onclick="openprogram(event, 'infoPlastik')"> <a>Sortering af Plastik</a></button>
-  <button onclick="openprogram(event, 'infoMetal')"> <a>Sortering af metal</a></button>
-  <button onclick="openprogram(event, 'infoPap')"> <a>Sortering af pap</a></button>
+  <button 					onclick="openprogram(event, 'infoDeponi')"> 			<a>Fakta om Deponi</a>				</button>
+  <button class="tablinks" 	onclick="openprogram(event, 'infoPlastik')"> 			<a>Sortering af Plastik</a>			</button>
+  <button 					onclick="openprogram(event, 'infoMetal')"> 				<a>Sortering af metal</a>			</button>
+  <button 					onclick="openprogram(event, 'infoPap')"> 				<a>Sortering af pap</a>				</button>
     
 
 	
@@ -177,12 +166,13 @@
 			 <br><br>
   		<b>Ting som ikke må sorteres som plast:</b>
 			 <br>
-  		Det er dog ikke alt plastik der kan genanvendes. Her viser vi nogle af dem som man måske ikke tænker på faktisk er farligt: <br><br>
+  		Det er dog ikke alt plastik der kan genanvendes. Her viser vi nogle af dem som man måske ikke tænker på faktisk er farligt: 
+			 <br><br>
 	  
   		<b>Tomme håndsprit-flasker</b>
 			 <br>
-  		Selv om håndspritflasken er tom, kan der godt sidde små spritrester i, og det gør flasken brandfarlig. Derfor skal den sorteres som farligt affald.<br><br>
-
+  		Selv om håndspritflasken er tom, kan der godt sidde små spritrester i, og det gør flasken brandfarlig. Derfor skal den sorteres som farligt affald.
+			 <br><br>
 
 		<b>Flasker og beholdere til skrappe rengøringsmidler eller insektbekæmpelse</b>
 			 <br>
@@ -200,7 +190,8 @@
    		<p>Der er mange lokale og regionale aftagere af jern- og metalaffald i Danmark. Fra små produkthandlere til store modtageanlæg. Men den største mængde metal, som vi indsamler, sendes til genanvendelse i udlandet. Det sorterede jern og metal ender således med at blive genanvendt og brugt i produktion af nyt jern og metal på smelteværker enten i Danmark eller i udlandet.
 			<br><br>
 
-   		Sorteringen sker ved mere eller mindre automatisk sortering med afsluttende manuel finsortering. <br><br>
+   		Sorteringen sker ved mere eller mindre automatisk sortering med afsluttende manuel finsortering. 
+			<br><br>
 
    		Selv det jern og metal, der ender på landets forbrændingsanlæg, frasorteres og genanvendes i et vist omfang. Men metal fra forbrændingsanlægget slagge har ikke så god kvalitet, og det er et stort problem når metaller smelter sig fast i forbrændingsanlæggene. Derfor er det en klar fordel at metallet udsorteres direkte til genanvendelse.
 			<br><br>
@@ -225,8 +216,8 @@
    		Cellulosefibrene som pap er opbygget af, kan genanvendes 5-6 gang, før de er slidt og dermed blevet for korte til at indgå i nyt pap.
 			<br><br>
 
-   		Genanvendelsen foregår populært sagt ved at returpappet opslemmes i vand og omdannes til en grød af fibre under omrøring i en pulper. I pulperen fjernes også metalclips, limrester og andre fremmedlegemer. Bøger kræver en særlig udviklet pulper for at kunne genanvedes, så derfor indsamles de i en særskilt fraktion.<br>
-	
+   		Genanvendelsen foregår populært sagt ved at returpappet opslemmes i vand og omdannes til en grød af fibre under omrøring i en pulper. I pulperen fjernes også metalclips, limrester og andre fremmedlegemer. Bøger kræver en særlig udviklet pulper for at kunne genanvedes, så derfor indsamles de i en særskilt fraktion.
+			<br>
    		</p>
 		
   		<p> 
@@ -241,13 +232,8 @@
 	
 
 	
-
-		
 	
-	
-	
-	
-	
+<!-- Slutningen af div'en der opsætter selve tekstboksen --> 
 </div>
 
 	
