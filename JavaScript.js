@@ -23,7 +23,7 @@ function skiftTilSkrald() {
 	
 	// Finder hvilket billede af skrald der er på siden nu. Hvis det er det rigtige billede iforhold til at forsætte "spillet", så eksekveres koden //
 	let billedeAfSkrald = document.getElementsByClassName("skraldOverTid");
-	if (billedeAfSkrald[1].src.match("Billeder/Xd-billeder/Forbrugs-produkter.png") || billedeAfSkrald[1].src.match("Billeder/Xd-billeder/Skrald.png") ){
+	if (billedeAfSkrald[1].src.match("Billeder/Xd-billeder/Forbrugs-produkter.png") || billedeAfSkrald[1].src.match("Billeder/Skrald-over-tid/Skrald.png") ){
 			
 		
 			
@@ -36,7 +36,7 @@ function skiftTilSkrald() {
 			if (billedeAfSkrald[1].src.match("Billeder/Xd-billeder/Forbrugs-produkter.png")){
 			
 				// Skifter det bargereste billede, til det nye billede  //
-				billedeAfSkrald[0].src = "Billeder/Xd-billeder/Skrald.png"
+				billedeAfSkrald[0].src = "Billeder/Skrald-over-tid/Skrald.png"
 		
 				// Laver et interval der køre indtil billederne er færdig med at skifte plads. Det bargeste billede starter med at have 0 i opacity og det forreste har 1. Bargeste går op og forest ned  //
 				let tidSkraldOpacity = setInterval(OpacitySkrald, 100);
@@ -59,28 +59,11 @@ function skiftTilSkrald() {
 				// Nustile billedet så det ligner billedet foran  //
 				setTimeout(nulstilBilledeAfSkrald, 1000)
 					function nulstilBilledeAfSkrald() {
-						billedeAfSkrald[1].src = "Billeder/Xd-billeder/Skrald.png"
+						billedeAfSkrald[1].src = "Billeder/Skrald-over-tid/Skrald.png"
 						billedeAfSkrald[1].style.opacity = 1;
 				}
 			}
 			
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
 				
 			//  Tjekker hvilken side brugeren kommer fra. Hvis brugeren kommer fra skrald, så betyder det soterings ikonerne og pile var gemt, og de skal derfor vises (langsomt): Viser ikoner fra Soterings siden: Går igennem alle elmenter der er tilæknyttet klassen "soteringsIkonerOgPile" og viser dem på skærmen  //
 			var sideOverskrift = document.getElementById("overskrift");
@@ -133,7 +116,7 @@ function skiftTilSotering() {
 	
 	// Finder hvilket billede af skrald der er på siden nu. Hvis det er det rigtige billede iforhold til at forsætte "spillet", så eksekveres koden //
 	let billedeAfSkrald = document.getElementsByClassName("skraldOverTid");
-		if (billedeAfSkrald[1].src.match("Billeder/Xd-billeder/Skrald.png") ){
+		if (billedeAfSkrald[1].src.match("Billeder/Skrald-over-tid/Skrald.png") ){
 				
 			//  Tjekker hvilken side brugeren kommer fra. Hvis brugeren kommer fra skrald, så betyder det soterings ikonerne og pile var gemt, og de skal derfor vises (langsomt): Viser ikoner fra Soterings siden: Går igennem alle elmenter der er tilæknyttet klassen "soteringsIkonerOgPile" og viser dem på skærmen  //
 			var sideOverskrift = document.getElementById("overskrift");
@@ -179,14 +162,10 @@ function skiftTilIngenPlast() {
 	
 	// Finder hvilket billede af skrald der er på siden nu. Hvis det er det rigtige billede iforhold til at forsætte "spillet", så eksekveres koden //
 	let billedeAfSkrald = document.getElementsByClassName("skraldOverTid");
-	if (billedeAfSkrald[1].src.match("Billeder/Xd-billeder/Skrald.png") ){
+	if (billedeAfSkrald[1].src.match("Billeder/Skrald-over-tid/Skrald.png") ){
 		
 		
-		
-		
-		
-	
-	
+
 	//                                    **Skift billeder**                                 //
 	
 	
@@ -197,7 +176,7 @@ function skiftTilIngenPlast() {
 				let opacitySkrald = 1;
 				let opacitySkrald2 = 0;
 		
-					billedeAfSkrald[1].src = "Billeder/Xd-billeder/Skrald-uden-plastik.png"
+					billedeAfSkrald[1].src = "Billeder/Skrald-over-tid/Skrald-uden-plast.png"
 					function OpacitySkrald() {
 						if (opacitySkrald <= 0 || opacitySkrald2 >= 1) 
 						{
@@ -214,7 +193,7 @@ function skiftTilIngenPlast() {
 				// Nustile billedet så det ligner billedet foran  //
 				setTimeout(nulstilBilledeAfSkrald, 1000)
 					function nulstilBilledeAfSkrald() {
-						billedeAfSkrald[0].src = "Billeder/Xd-billeder/Skrald.png"
+						billedeAfSkrald[0].src = "Billeder/Skrald-over-tid/Skrald.png"
 						billedeAfSkrald[0].style.opacity = 1;
 				}
 					
@@ -249,12 +228,6 @@ function skiftTilIngenPlast() {
 	
 	
 	
-	
-	
-	
-	
-	
-	
 	//                                    **Flytter**                                 //
 	
 	//*Skrald*//
@@ -264,7 +237,7 @@ function skiftTilIngenPlast() {
 		
 	
 			function flytSkrald() {
-				if (xVærdiSkrald == 100) 
+				if (xVærdiSkrald == 155) 
 				{
 					clearInterval(tidSkrald);
 					
@@ -278,11 +251,11 @@ function skiftTilIngenPlast() {
 	
 	//*Plast*//
 		// Flytter plast ikonet på y-aksen//
-		let yTidPlastIkon = setInterval(yFlytPlastIkon, 10);
+		let yTidPlastIkon = setInterval(yFlytPlastIkon, 17);
 		let yVærdiPlastIkon = document.getElementById("plastIkon").offsetTop;
 	
 			function yFlytPlastIkon() {
-				if (yVærdiPlastIkon == 420) 
+				if (yVærdiPlastIkon == 415) 
 				{clearInterval(yTidPlastIkon);}
 				else {
 					yVærdiPlastIkon-= 5;
@@ -291,14 +264,14 @@ function skiftTilIngenPlast() {
 			}
 	
 		// Flytter plast ikonet på x-aksen//
-		let xTidPlastIkon = setInterval(xFlytPlastIkon, 10);
+		let xTidPlastIkon = setInterval(xFlytPlastIkon, 17);
 		let xVærdiPlastIkon = document.getElementById("plastIkon").offsetLeft;
 	
 			function xFlytPlastIkon() {
-				if (xVærdiPlastIkon == 710) 
+				if (xVærdiPlastIkon == 700) 
 				{clearInterval(xTidPlastIkon);}
 				else {
-					xVærdiPlastIkon+= 5;
+					xVærdiPlastIkon-= 5;
 					document.getElementById("plastIkon").style.left = xVærdiPlastIkon + "px";
 				}
 			}
@@ -313,7 +286,7 @@ function skiftTilIngenPlast() {
 		let xVærdiMetalIkon = document.getElementById("metalIkon").offsetLeft;
 	
 			function xFlytMetalIkon() {
-				if (xVærdiMetalIkon == 400) 
+				if (xVærdiMetalIkon == 425) 
 				{clearInterval(xTidMetalIkon);}
 				else {
 					xVærdiMetalIkon-= 5;
@@ -321,12 +294,12 @@ function skiftTilIngenPlast() {
 				}
 			}
 	
-		// Flytter metal ikonet på x-aksen//
+		// Flytter metal pilen på x-aksen//
 		let xTidMetalPil = setInterval(xFlytMetalPil, 15);
 		let xVærdiMetalPil = document.getElementById("metalPil").offsetLeft;
 	
 			function xFlytMetalPil() {
-				if (xVærdiMetalPil == 400) 
+				if (xVærdiMetalPil == 425) 
 				{clearInterval(xTidMetalPil);}
 				else {
 					xVærdiMetalPil-= 5;
@@ -341,7 +314,7 @@ function skiftTilIngenPlast() {
 		let xVærdiPapIkon = document.getElementById("papIkon").offsetLeft;
 	
 			function xFlytPapIkon() {
-				if (xVærdiPapIkon == 630) 
+				if (xVærdiPapIkon == 335) 
 				{clearInterval(xTidPapIkon);}
 				else {
 					xVærdiPapIkon-= 5;
@@ -354,7 +327,7 @@ function skiftTilIngenPlast() {
 		let xVærdiPapPil = document.getElementById("papPil").offsetLeft;
 	
 			function xFlytPapPil() {
-				if (xVærdiPapPil == 530) 
+				if (xVærdiPapPil == 380) 
 				{clearInterval(xTidPapPil);}
 				else {
 					xVærdiPapPil-= 5;
@@ -392,7 +365,7 @@ function skiftTilOmdannelse() {
 	// Finder hvilket billede af skrald og plast, der er på siden nu. Hvis det er det rigtige billede iforhold til at forsætte "spillet", så eksekveres koden //
 	let billedeAfSkrald = document.getElementsByClassName("skraldOverTid");
 	let billedeAfPlast  = document.getElementsByClassName("plastOverTid");
-	if (billedeAfSkrald[1].src.match("Billeder/Xd-billeder/Skrald-uden-plastik.png") && billedeAfPlast[1].src.match("Billeder/Xd-billeder/Soteret-Plast.png") ) {
+	if (billedeAfSkrald[1].src.match("Billeder/Skrald-over-tid/Skrald-uden-plast.png") && billedeAfPlast[1].src.match("Billeder/Xd-billeder/Soteret-Plast.png") ) {
 		
 		
 		
@@ -445,7 +418,7 @@ function skiftTilGenadvendelse() {
 	// Finder hvilket billede af skrald og plast, der er på siden nu. Hvis det er det rigtige billede iforhold til at forsætte "spillet", så eksekveres koden //
 	let billedeAfSkrald = document.getElementsByClassName("skraldOverTid");
 	let billedeAfPlast  = document.getElementsByClassName("plastOverTid");
-	if (billedeAfSkrald[1].src.match("Billeder/Xd-billeder/Skrald-uden-plastik.png") && billedeAfPlast[1].src.match("Billeder/Xd-billeder/Plast-klar-til-genbrug.png") ) {
+	if (billedeAfSkrald[1].src.match("Billeder/Skrald-over-tid/Skrald-uden-plast.png") && billedeAfPlast[1].src.match("Billeder/Xd-billeder/Plast-klar-til-genbrug.png") ) {
 		
 		// Skifter billedet af soteret plast til et plastikflaske, tilpasser billedets størelse, og skifter også overskriften til at være Genadvendelse. //
 		
@@ -572,11 +545,11 @@ function skiftTilGenadvendelse() {
 				}
 		
 			// Flytter plast ikonet på y-aksen//
-			let yTidPlastIkon = setInterval(yFlytPlastIkon, 20);
+			let yTidPlastIkon = setInterval(yFlytPlastIkon, 25);
 			let yVærdiPlastIkon = document.getElementById("plastIkon").offsetTop;
 	
 				function yFlytPlastIkon() {
-					if (yVærdiPlastIkon == 385) 
+					if (yVærdiPlastIkon == 380) 
 					{clearInterval(yTidPlastIkon);}
 					else {
 						yVærdiPlastIkon-= 5;
@@ -585,11 +558,11 @@ function skiftTilGenadvendelse() {
 				}
 	
 			// Flytter plast ikonet på x-aksen//
-			let xTidPlastIkon = setInterval(xFlytPlastIkon, 15);
+			let xTidPlastIkon = setInterval(xFlytPlastIkon, 17);
 			let xVærdiPlastIkon = document.getElementById("plastIkon").offsetLeft;
 	
 				function xFlytPlastIkon() {
-					if (xVærdiPlastIkon == 900) 
+					if (xVærdiPlastIkon == 870) 
 					{clearInterval(xTidPlastIkon);}
 					else {
 						xVærdiPlastIkon+= 5;
