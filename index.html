@@ -2,25 +2,137 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Forbrug</title>
-	<link rel="stylesheet" href="Stylesheet.css">
+<title>Skrald</title>
+<link rel="stylesheet" href="Stylesheet.css">
 	<script src="JavaScript.js"> </script>
-</head>
-<body>
 	
-
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Fanwood+Text&family=Palanquin&family=Poppins&display=swap" rel="stylesheet">
+	
+</head>
+<body id="baggrund">
 	
 	
 	<!------------------------------------------------------------ Sidehovde -------------------------------------------------------------->
-	
-	
-	
-	
+	<!-- Bagrunden/den brune farve til navigastionsbaren -->
+	<div id="sidehovde"> 
+		
+		<!-- Overskriften der fortæler hvilken side man er på -->
+		<h1 id="overskrift"> Forbrug </h1>
+		
+		
+		
+		<!-- Logo -->
+<button id="LogoSidehovde"                class="navigationsbarLogoOgIkoner" OnClick="skiftTilForside()">      	<img src="Billeder/Logo/logo med baggrund.png" width="250" height="74" alt="Firma logo"/></button> 
+
+		<!---                                                         Ikoner                                                      ----->
+		
+<!-- Forbrug ikonet på navigastionsbaren. Når man trykker på den, så skifter flere elementer "stadier", så de passer til forbrug siden -->
+<button id="forbrugUnderoverskrift"       class="navigationsbarLogoOgIkoner" OnClick="skiftTilForbrug()">		<h2> Forbrug </h2> 																		 </button>
+<button id="forbrugIkon"                  class="navigationsbarLogoOgIkoner" OnClick="skiftTilForbrug()"> 		<img src="Billeder/Ikoner/Forbrug.png" width="80" height="80" alt="Forbrug ikon"/> 		 </button>
+
+		
+<!-- Skrald ikonet på navigastionsbaren. Når man trykker på den, så skifter flere elementer "stadier", så de passer til skrald siden -->
+<button id="skraldPil"                    class="navigationsbarLogoOgIkoner" OnClick="skiftTilForbrug()"> 		<img src="Billeder/Ikoner/Pile/pil1.png" width="84.8" height="51" alt="Pil"/> 	 </button>
+<button id="skraldUnderoverskrift"        class="navigationsbarLogoOgIkoner" OnClick="skiftTilSkrald()">		<h2> Skrald </h2> 																		 </button>
+<button id="skraldIkon"                   class="navigationsbarLogoOgIkoner" OnClick="skiftTilSkrald()">		<img src="Billeder/Ikoner/Skrald.png" width="80" height="80" alt="Skrald ikon"/> 		 </button>
+		
+<!-- Sotering ikonet på navigastionsbaren. Når man trykker på den, så skifter flere elementer "stadier", så de passer til sotering siden -->
+<button id="soteringPil"                  class="navigationsbarLogoOgIkoner" OnClick="skiftTilForbrug()"> 		<img src="Billeder/Ikoner/Pile/pil1.png" width="84.8" height="51" alt="Pil"/> 	 </button>
+<button id="soteringUnderoverskrift"      class="navigationsbarLogoOgIkoner" OnClick="skiftTilSotering()">		<h2> Sotering </h2> 																	 </button>
+<button id="soteringIkon"                 class="navigationsbarLogoOgIkoner" OnClick="skiftTilSotering()"> 		<img src="Billeder/Ikoner/Sortering.png" width="80" height="80" alt="Sotering ikon"/> 	 </button>
+		
+<!-- Omdannelse ikonet på navigastionsbaren. Når man trykker på den, så skifter flere elementer "stadier", så de passer til omdannelse siden -->
+<button id="omdannelsePil"                class="navigationsbarLogoOgIkoner" OnClick="skiftTilForbrug()"> 		<img src="Billeder/Ikoner/Pile/pil1.png" width="84.8" height="51" alt="Pil"/> 	 </button>
+<button id="omdannelsePil2"               class="navigationsbarLogoOgIkoner" OnClick="skiftTilForbrug()"> 		<img src="Billeder/Ikoner/Pile/pil1.png" width="28.2666666667" height="35" alt="Pil"/></button>
+<button id="omdannelseUnderoverskrift"    class="navigationsbarLogoOgIkoner" OnClick="skiftTilOmdannelse()">	<h2> Omdannelse </h2> 																	 </button>
+<button id="omdannelseIkon"               class="navigationsbarLogoOgIkoner" OnClick="skiftTilOmdannelse()">	<img src="Billeder/Ikoner/Omdannelse.png" width="80" height="80" alt="Omdannelse ikon"/> </button>
+		
+<!-- Genadvendelse ikonet på navigastionsbaren. Når man trykker på den, så skifter flere elementer "stadier", så de passer til genadvendelse siden -->
+<button id="genadvendelsePil"             class="navigationsbarLogoOgIkoner" OnClick="skiftTilForbrug()"> 		<img src="Billeder/Ikoner/Pile/pil1.png" width="84.8" height="51" alt="Pil"/> 	 </button>
+<button id="genadvendelseUnderoverskrift" class="navigationsbarLogoOgIkoner" OnClick="skiftTilGenadvendelse()"> <h2> Genadvendelse </h2> 																 </button>
+<button id="genadvendelseIkon"            class="navigationsbarLogoOgIkoner" OnClick="skiftTilGenadvendelse()"> <img src="Billeder/Ikoner/Genanvendelse.png" width="106,506986028" height="80" alt="Genadvendelse ikon"/></button>
+		
+<!-- Afbrænding ikonet på navigastionsbaren. Når man trykker på den, så skifter flere elementer "stadier", så de passer til afbraending siden -->
+<button id="afbraendingPil"               class="navigationsbarLogoOgIkoner" OnClick="skiftTilForbrug()">   	<img src="Billeder/Ikoner/Pile/pil1.png" width="84.8" height="51" alt="Pil"/> 	 </button>
+<button id="afbraendingUnderoverskrift"   class="navigationsbarLogoOgIkoner" OnClick="skiftTilAfbraending()">   <h2> Afbraending </h2> 																	 </button>
+<button id="afbraendingIkon"              class="navigationsbarLogoOgIkoner" OnClick="skiftTilAfbraending()">  	<img src="Billeder/Ikoner/Afbrændning.png" width="80" height="80" alt="Afbraending ikon"/></button>
+		
+<!-- El ikonet på navigastionsbaren. Når man trykker på den, så skifter flere elementer "stadier", så de passer til el siden -->
+<button id="elPil"                   	  class="navigationsbarLogoOgIkoner" OnClick="skiftTilForbrug()"> 		<img src="Billeder/Ikoner/Pile/pil1.png" width="84.8" height="51" alt="Pil"/> 	 </button>
+<button id="elUnderoverskrift"            class="navigationsbarLogoOgIkoner" OnClick="skiftTilEl()">		    <h2> El </h2> 																		 	 </button>
+<button id="elIkon"                       class="navigationsbarLogoOgIkoner" OnClick="skiftTilEl()"> 		    <img src="Billeder/Ikoner/El.png" width="80" height="80" alt="El ikon"/> 				 </button>
+		
+	</div>
+		
 	
 	<!------------------------------------------------------------ Spil delen -------------------------------------------------------------->
 	
+	<!-- Billede af: Produkterne der bliver til skrald, og så langsomt fjernet -->
+	<img src="Billeder/Xd-billeder/Forbrugs-produkter.png"
+						 width="503" height="503" alt="Forbrugsprodukter" class="skraldOverTid"/>
+	
+	<!-- Billede af: Produkterne der bliver til skrald, og så langsomt fjernet -->
+	<img src="Billeder/Xd-billeder/Forbrugs-produkter.png"
+						 width="503" height="503" alt="Forbrugsprodukter" class="skraldOverTid"/>
 	
 	
+	
+	
+	<!-- Faktaboxen der følger skraldets faser -->
+	<img src="Billeder/Xd-billeder/Rekonstrueret-Xd-billeder/Hel-Faktabox.png"
+						 width="420" height="420" alt="Hel faktabox" id="faktabox"/>
+	
+	
+	
+	
+	<!-- Billede af plast for sig selv, der går fra skrald til nyt produkt -->
+	<img src="Billeder/Xd-billeder/Soteret-Plast.png"
+						 width="664" height="349" alt="Hel faktabox" class="plastOverTid"/>
+	
+	<!-- Billede af plast for sig selv, der går fra skrald til nyt produkt -->
+	<img src="Billeder/Xd-billeder/Soteret-Plast.png"
+						 width="664" height="349" alt="Hel faktabox" class="plastOverTid"/>
+	
+	
+	
+	
+	<!-- Plast ikon -->
+	<button id="plastIkon" class="soteringsIkonerOgPile"  OnClick="skiftTilIngenPlast()">
+		<img src="Billeder/Ikoner/Soterings-Ikoner/plast.png"
+						 width="55" height="55" alt="Plast ikon"/>
+	</button>
+	
+		<!-- Plast pil -->
+		<img src="Billeder/Xd-billeder/Rekonstrueret-Xd-billeder/Plast-Markerings-pil.png"
+						 width="80" height="19" alt="Pap ikon" id="plastPil" class="soteringsIkonerOgPile"/>
+	
+	
+	<!-- Metal ikon -->
+	<img src="Billeder/Ikoner/Soterings-Ikoner/jern.png"
+						 width="55" height="55" alt="Metal ikon" id="metalIkon" class="soteringsIkonerOgPile"/>
+		<!-- Metal pil -->
+		<img src="Billeder/Xd-billeder/Rekonstrueret-Xd-billeder/Jern-Markerings-pil.png"
+						 width="26" height="45" alt="Pap ikon" id="metalPil" class="soteringsIkonerOgPile"/>
+	
+	
+	<!-- Pap ikon -->
+	<img src="Billeder/Ikoner/Soterings-Ikoner/pap.png"
+						 width="55" height="55" alt="Pap ikon" id="papIkon" class="soteringsIkonerOgPile"/>
+		<!-- Pap pil -->
+		<img src="Billeder/Xd-billeder/Rekonstrueret-Xd-billeder/Pap-Markerings-pil.png"
+						 width="50" height="68.5" alt="Pap ikon" id="papPil" class="soteringsIkonerOgPile"/>
+	
+	
+	
+	
+	
+	
+	<!------------------------------------------------------------ billede generator -------------------------------------------------------------->
+	<!-- Faktaboxen der følger skraldets faser -->
+	<img src="Billeder/Xd-billeder/Plastik-flaske.png"
+						 width="1" height="1" alt="#" />
 	
 	
 	
