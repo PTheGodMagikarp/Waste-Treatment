@@ -1,12 +1,269 @@
 @charset "utf-8";
 /* CSS Document */
 
-
-
-/* --------------------------------------------------------------------- Og sådan her når det er CSS ----------------------------------------------------------*/
-
-
-/* Og sådan her selvføldig til indivisuel kode */
-.eksempel{
+#baggrund{
+	background: #FFFCEB
 }
+
+/* --------------------------------------------------------------------- Sidehovde ----------------------------------------------------------*/
+/* Bagrunden/den brune farve til navigastionsbaren  */
+#sidehovde{
+	top: -1px;
+	left: -1px;
+	position: absolute;
+	width: 1921px;
+	height: 251px;
+	
+	background: #7F524D;
+}
+
+/* Overskriften der fortæler hvilken side man er på  */
+#overskrift{
+	position: absolute;
+	top: -25px;
+	left: 903px;
+
+	font: bold normal normal 40px/53px 'Poppins', sans-serif;
+	color: #548F45;
+}
+
+/* Overskriften der fortæler hvilken side man er på  */
+#LogoSidehovde{
+	top: 97px;
+	left: 60px;
+}
+
+/* Alle ikoner på navigastionsbarens fælles klasse  */
+.navigationsbarLogoOgIkoner{
+	position: absolute;
+	
+	font: normal normal normal 18px/24px 'Fanwood Text', serif;
+	color: #548F45;
+	background: none;
+	Padding: 0px;
+	border: none;
+	
+}
+
+/***                                                                           Forbrug                                                                  ****/ 
+/* Underoverskrift til Forbrug ikonet på navigastionsbaren. Når man trykker på den, så skifter flere elementer "stadier", så de passer til forbrug siden  */
+#forbrugUnderoverskrift{
+	top: 58px;
+	left: 450px;
+}
+/* Forbrug ikonet på navigastionsbaren. Når man trykker på den, så skifter flere elementer "stadier", så de passer til forbrug siden  */
+#forbrugIkon{
+	top: 103px;
+	left: 450px;
+}
+
+
+/***                                                                           Skrald                                                       ****/ 
+/* Pilen til Skrald ikonet på navigastionsbaren. Når man trykker på den, så skifter flere elementer "stadier", så de passer til skrald siden  */
+#skraldPil{
+	top: 103px;
+	left: 600px;
+}
+/* Underoverskrift til Skrald ikonet på navigastionsbaren. Når man trykker på den, så skifter flere elementer "stadier", så de passer til skrald siden  */
+#skraldUnderoverskrift{
+	top: 58px;
+	left: 756px;
+}
+/* Skrald ikonet på navigastionsbaren. Når man trykker på den, så skifter flere elementer "stadier", så de passer til skrald siden  */
+#skraldIkon{
+	top: 103px;
+	left: 750px;
+}
+
+
+/***                                                                           Sotering                                                         ****/ 
+/* Pilen til Sotering ikonet på navigastionsbaren. Når man trykker på den, så skifter flere elementer "stadier", så de passer til sotering siden  */
+#soteringPil{
+	top: 103px;
+	left: 900px;
+}
+
+/* Underoverskrift til Sotering ikonet på navigastionsbaren. Når man trykker på den, så skifter flere elementer "stadier", så de passer til sotering siden  */
+#soteringUnderoverskrift{
+	top: 58px;
+	left: 1044px;
+}
+
+/* Sotering ikonet på navigastionsbaren. Når man trykker på den, så skifter flere elementer "stadier", så de passer til sotering siden  */
+#soteringIkon{
+	top: 103px;
+	left: 1050px;
+}
+
+
+
+
+
+/***                                                                           Omdanelse                                                          ****/ 
+/* Pil til Omdannelse ikonet (fra sotering) på navigastionsbaren. Når man trykker på den, så skifter flere elementer "stadier", så de passer til omdannelse siden  */
+#omdannelsePil{
+	top: 40px;
+	left: 1200px;
+}
+
+/* Pil til Omdannelse ikonet (fra afbrænding) på navigastionsbaren. Når man trykker på den, så skifter flere elementer "stadier", så de passer til omdannelse siden  */
+#omdannelsePil2{
+	top: 105px;
+	left: 1380px;
+	transform: rotate(270deg);
+}
+
+/* Pil til Omdannelse ikonet på navigastionsbaren. Når man trykker på den, så skifter flere elementer "stadier", så de passer til omdannelse siden  */
+#omdannelseUnderoverskrift{
+	top: -5px;
+	left: 1325px;
+}
+
+/* Pil til Omdannelse ikonet på navigastionsbaren. Når man trykker på den, så skifter flere elementer "stadier", så de passer til omdannelse siden  */
+#omdannelseIkon{
+	top: 40px;
+	left: 1350px;
+}
+
+
+
+/***                                                                           Genadvendelse                                                                       ****/ 
+/* Underoverskrift tilGenadvendelse ikonet på navigastionsbaren. Når man trykker på den, så skifter flere elementer "stadier", så de passer til genadvendelse siden  */
+#genadvendelsePil{
+	top: 40px;
+	left: 1500px;
+}
+
+/* Genadvendelse ikonet på navigastionsbaren. Når man trykker på den, så skifter flere elementer "stadier", så de passer til genadvendelse siden  */
+#genadvendelseUnderoverskrift{
+	top: -5px;
+	left: 1620px;
+}
+
+/* Genadvendelse ikonet på navigastionsbaren. Når man trykker på den, så skifter flere elementer "stadier", så de passer til genadvendelse siden  */
+#genadvendelseIkon{
+	top: 40px;
+	left: 1650px;
+}
+
+
+
+/***                                                                           Afbrænding                                                ****/ 
+/* Pil til Afbrænding ikonet på navigastionsbaren. Når man trykker på den, så skifter flere elementer "stadier", så de passer til afbrænding siden  */
+#afbraendingPil{
+	top: 160px;
+	left: 1200px;
+}
+
+/* Underoverskrift til Afbrænding ikonet på navigastionsbaren. Når man trykker på den, så skifter flere elementer "stadier", så de passer til afbrænding siden  */
+#afbraendingUnderoverskrift{
+	top: 115px;
+	left: 1327px;
+}
+
+
+/* Afbrænding ikonet på navigastionsbaren. Når man trykker på den, så skifter flere elementer "stadier", så de passer til afbrænding siden  */
+#afbraendingIkon{
+	top: 160px;
+	left: 1350px;
+}
+
+
+
+/***                                                                           El                                        ****/ 
+/* Pil til El ikonet på navigastionsbaren. Når man trykker på den, så skifter flere elementer "stadier", så de passer til el siden  */
+#elPil{
+	top: 160px;
+	left: 1500px;
+}
+
+/* Underoverskrift til El ikonet på navigastionsbaren. Når man trykker på den, så skifter flere elementer "stadier", så de passer til el siden  */
+#elUnderoverskrift{
+	top: 115px;
+	left: 1684px;
+}
+
+/* El ikonet på navigastionsbaren. Når man trykker på den, så skifter flere elementer "stadier", så de passer til el siden  */
+#elIkon{
+	top: 160px;
+	left: 1650px;
+}
+
+/* --------------------------------------------------------------------- Interaktion del ----------------------------------------------------------*/
+
+/* Billede af: Produkterne der bliver til skrald, og så langsomt fjernet  */
+.skraldOverTid{
+	position: absolute;
+	top: 330px;
+	left: 400px;
+}
+
+/* Faktaboxen der følger skraldets faser */
+#faktabox{
+	position: absolute;
+	top: 375px;
+	left: 1000px;
+}
+
+.plastOverTid{
+	position: absolute;
+	top: 410px;
+	left: 700px;
+	display: none;
+	opacity: 0;
+}
+
+/* Ikoner og deres tilhørene pile fra soterings siden */
+.soteringsIkonerOgPile{
+	position: absolute;
+	display: none;
+	opacity: 0;
+	
+	background: none;
+	Padding: 0px;
+	border: none;
+}
+
+/* Plast ikon */
+#plastIkon{
+	top: 630px;
+	left: 920px;
+}
+
+/* Plast pil */
+#plastPil{
+	top: 710px;
+	left: 860px;
+	transform: rotate(300deg);
+}
+
+
+/* Metal ikon */
+#metalIkon{
+	top: 855px;
+	left: 670px;
+}
+
+/* Metal pil */
+#metalPil{
+	top: 810px;
+	left: 670px;
+}
+
+
+/* Pap ikon */
+#papIkon{
+	top: 260px;
+	left: 580px;
+}
+
+/* Pap pil */
+#papPil{
+	top: 308px;
+	left: 625px;
+	transform: rotate(90deg);
+}
+
+
+/* --------------------------------------------------------------------- Tekst del ----------------------------------------------------------*/
 	
