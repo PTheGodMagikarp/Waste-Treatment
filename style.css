@@ -7,7 +7,7 @@
 
 
 /* Sætter fonten og tekst størrelsen på underoverskrifterne */
-.tabcontent b {
+.menuIndhold b {
 	font-family: 'Fanwood Text', sans-serif;
 	font-size: 20px;
 }
@@ -23,7 +23,7 @@
 
 
 /* Fonten på overskriften */
-.tabcontent h3 {
+.menuIndhold h3 {
 	font-family: 'Poppins', sans-serif;
 }
 
@@ -39,7 +39,7 @@
 
 
 /* Farven på brødteksten */
-.tabcontent hr {
+.menuIndhold hr {
 	color: #fffceb;              
 }
 
@@ -121,7 +121,7 @@
 
 
 /* Style the tab content */
-.tabcontent {
+.menuIndhold {
   display: none;
   padding: 6px 12px;
   border-top: none;
@@ -137,6 +137,6 @@
 
 
 /* Nedsætter afstanden imellem knapperne og teksten vertikalt så afstanden ikke er for stor */
-.tabcontent h3 {
+.menuIndhold h3 {
   margin-top: -8%;
 }

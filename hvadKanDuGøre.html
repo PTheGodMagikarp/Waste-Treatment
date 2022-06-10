@@ -23,7 +23,7 @@
 </head>
 
 <!-- AKTIVER SCRIPTET DER VISER TEKST I DROP DOWN MENUEN, SOM SØRGER FOR AT 'FAKTA OM DEPONI' ALTID ÅBNER OP FRA START -->
-<body onload="openprogram(event, 'blender')">
+<body onload="openprogram(event, 'infoDeponi')">
 	
 
 	
@@ -41,10 +41,10 @@
  <!-- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->  
 
   <!-- KNAPPERNE I DROP DOWN MENUEN -->
-  <button onclick="openprogram(event, 'blender')"> <a>Fakta om Deponi</a></button>
-  <button class="tablinks" onclick="openprogram(event, 'adobe')"> <a>Sortering af Plastik</a></button>
-  <button onclick="openprogram(event, 'ilustrator')"> <a>Sortering af metal</a></button>
-  <button onclick="openprogram(event, 'photoshop')"> <a>Sortering af pap</a></button>
+  <button onclick="openprogram(event, 'infoDeponi')"> <a>Fakta om Deponi</a></button>
+  <button class="tablinks" onclick="openprogram(event, 'infoPlastik')"> <a>Sortering af Plastik</a></button>
+  <button onclick="openprogram(event, 'infoMetal')"> <a>Sortering af metal</a></button>
+  <button onclick="openprogram(event, 'infoPap')"> <a>Sortering af pap</a></button>
     
   <!-- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- --> 
     
@@ -78,9 +78,9 @@
 	
 	
 <!-- FAKTA OF DEPONI -->
-<div class="box">
+<div class="boks">
 
-<div id="blender" class="tabcontent">
+<div id="infoDeponi" class="menuIndhold">
   <h3>Fakta om Deponi</h3>
   <p>Omkring 40.000 tons dansk husholdningsaffald deponeres årligt, da ingen ved hvad man skal gøre ved det, eller venter på teknologien til at kunne forarbejde det. Når man deponere, anbringer man affaldsmateriale i depoter, typisk i jorden i en tidsperiode, isoleret af ler eller beton. I særligt farligt affald installeres mekanikker som sørger for at giftstofferne affaldet udleder bliver renset. <br><br>
 Med deponi er den mindst gavnlige måde at behandle affald, da både råstofferne, og den energi der kunne komme af dem, går tabt, når affaldet hverken gives nyt liv eller brændes, men graves ned. Vores viden og teknologi har udviklet sig meget siden man begyndte at deponere, og i dag er det derfor  muligt at grave affaldet op og bruge det til noget nyttigt. Derfor har vi anskaffet teknologien til at grave deponier op, så affaldet ikke går til spilde, eller forurener miljøet.
@@ -102,7 +102,7 @@ Med deponi er den mindst gavnlige måde at behandle affald, da både råstoffern
 		
 		
 <!-- SORTERING AF PLASTIK -->
-<div id="adobe" class="tabcontent">
+<div id="infoPlastik" class="menuIndhold">
   <h3>Sortering af Plastik</h3>
   <p>På genbrugsstationerne kan man aflevere fire forskellige plasttyper: Hård PVC, havemøbler, plastfolie og hård plast. Plasten sorteres og pakkes. Hver af plasttyperne sendes videre til forskellige anlæg, alt efter hvilken plasttype det anlæg specialiserer sig i. Plasten vaskes, tørres og findeles til granulat, som man kan lave nyt plast af. <br><br>
   <b>Ting som ikke må sorteres som plast:</b><br>
@@ -131,7 +131,7 @@ Med deponi er den mindst gavnlige måde at behandle affald, da både råstoffern
 	
 	
 <!-- SORTERING AF METAL -->
-<div id="ilustrator" class="tabcontent">
+<div id="infoMetal" class="menuIndhold">
    <h3>Sortering af metal</h3>
    <p>Der er mange lokale og regionale aftagere af jern- og metalaffald i Danmark. Fra små produkthandlere til store modtageanlæg. Men den største mængde metal, som vi indsamler, sendes til genanvendelse i udlandet. Det sorterede jern og metal ender således med at blive genanvendt og brugt i produktion af nyt jern og metal på smelteværker enten i Danmark eller i udlandet.<br><br>
 
@@ -159,7 +159,7 @@ Med deponi er den mindst gavnlige måde at behandle affald, da både råstoffern
 	
 	
 <!-- SORTERING AF PAP -->
-<div id="photoshop" class="tabcontent">
+<div id="infoPap" class="menuIndhold">
    <h3>Sortering af pap</h3>
 		
    <p>
