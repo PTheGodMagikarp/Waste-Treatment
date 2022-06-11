@@ -59,7 +59,7 @@ function skiftTilSkrald() {
 				let tekst0 = 1;
 				let tekst1 = 0;
 		
-					tekst[1].innerHTML =  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud <br><br> exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore <br><br> eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+					tekst[1].innerHTML =  "Den gennemsnitlige dansker smider i gennemsnit 845 kg husholdningsaffald ud om året. Derudover bliver omkring 40.000 tons dansk husholdningsaffald deponeret årligt, da ingen ved hvad man skal gøre ved det."
 		
 					function NyTekst() {
 						if (tekst0 <= 0 || tekst1 >= 1) 
@@ -77,7 +77,7 @@ function skiftTilSkrald() {
 				// Nustile billedet så det ligner billedet foran  //
 				setTimeout(nulstilTekst, 1000)
 					function nulstilTekst() {
-						tekst[0].innerHTML = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud <br><br> exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore <br><br> eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+						tekst[0].innerHTML = "Den gennemsnitlige dansker smider i gennemsnit 845 kg husholdningsaffald ud om året. Derudover bliver omkring 40.000 tons dansk husholdningsaffald deponeret årligt, da ingen ved hvad man skal gøre ved det."
 				}
 		
 		
@@ -148,7 +148,7 @@ function skiftTilSotering() {
 				let tekst0 = 1;
 				let tekst1 = 0;
 		
-					tekst[1].innerHTML = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud <br><br> exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore <br><br> eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+					tekst[1].innerHTML = "På genbrugsstationerne kan man aflevere fire forskellige plasttyper: Hård PVC, havemøbler, plastfolie og hård plast. Plasten sorteres og pakkes. Hver af plasttyperne sendes videre til forskellige anlæg, alt efter hvilken plasttype det anlæg specialiserer sig i. Plasten vaskes, tørres og findeles til granulat, som man kan lave nyt plast af."
 		
 					function NyTekst() {
 						if (tekst0 <= 0 || tekst1 >= 1) 
@@ -166,7 +166,7 @@ function skiftTilSotering() {
 				// Nustile billedet så det ligner billedet foran  //
 				setTimeout(nulstilTekst, 1000)
 					function nulstilTekst() {
-						tekst[0].innerHTML = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud <br><br> exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore <br><br> eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+						tekst[0].innerHTML = "På genbrugsstationerne kan man aflevere fire forskellige plasttyper: Hård PVC, havemøbler, plastfolie og hård plast. Plasten sorteres og pakkes. Hver af plasttyperne sendes videre til forskellige anlæg, alt efter hvilken plasttype det anlæg specialiserer sig i. Plasten vaskes, tørres og findeles til granulat, som man kan lave nyt plast af."
 				}	
 			
 			
@@ -293,7 +293,7 @@ function skiftTilIngenPlast() {
 				let tekst0 = 1;
 				let tekst1 = 0;
 		
-					tekst[1].innerHTML = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud <br><br> exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore <br><br> eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+					tekst[1].innerHTML = "På genbrugsstationerne kan man aflevere fire forskellige plasttyper: Hård PVC, havemøbler, plastfolie og hård plast. Plasten sorteres og pakkes. Hver af plasttyperne sendes videre til forskellige anlæg, alt efter hvilken plasttype det anlæg specialiserer sig i. Plasten vaskes, tørres og findeles til granulat, som man kan lave nyt plast af. "
 		
 					function NyTekst() {
 						if (tekst0 <= 0 || tekst1 >= 1) 
@@ -311,7 +311,7 @@ function skiftTilIngenPlast() {
 				// Nustile billedet så det ligner billedet foran  //
 				setTimeout(nulstilTekst, 1000)
 					function nulstilTekst() {
-						tekst[0].innerHTML = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud <br><br> exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore <br><br> eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+						tekst[0].innerHTML = "På genbrugsstationerne kan man aflevere fire forskellige plasttyper: Hård PVC, havemøbler, plastfolie og hård plast. Plasten sorteres og pakkes. Hver af plasttyperne sendes videre til forskellige anlæg, alt efter hvilken plasttype det anlæg specialiserer sig i. Plasten vaskes, tørres og findeles til granulat, som man kan lave nyt plast af."
 				}
 	
 	
@@ -548,7 +548,7 @@ function skiftTilOmdannelse() {
 				let tekst0 = 1;
 				let tekst1 = 0;
 		
-					tekst[1].innerHTML = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud <br><br> exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore <br><br> eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+					tekst[1].innerHTML = "Godt 30 % af plastaffaldet indsamles til genanvendelse, heraf skønnes mindre end 50 % reelt genanvendt. En del af plastaffaldet, ca 1,5-4 % af verdens plastproduktion, havner i vores have. I havet ender plastaffaldet på verdens strande, nedbrydes til mikroplast eller danner store 'øer' af plast."
 		
 					function NyTekst() {
 						if (tekst0 <= 0 || tekst1 >= 1) 
@@ -566,7 +566,7 @@ function skiftTilOmdannelse() {
 				// Nustile billedet så det ligner billedet foran  //
 				setTimeout(nulstilTekst, 1000)
 					function nulstilTekst() {
-						tekst[0].innerHTML = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud <br><br> exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore <br><br> eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+						tekst[0].innerHTML = "Godt 30 % af plastaffaldet indsamles til genanvendelse, heraf skønnes mindre end 50 % reelt genanvendt. En del af plastaffaldet, ca 1,5-4 % af verdens plastproduktion, havner i vores have. I havet ender plastaffaldet på verdens strande, nedbrydes til mikroplast eller danner store 'øer' af plast."
 				}
 		
 		
@@ -646,7 +646,7 @@ function skiftTilGenadvendelse() {
 				let tekst0 = 1;
 				let tekst1 = 0;
 		
-					tekst[1].innerHTML = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud <br><br> exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore <br><br> eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+					tekst[1].innerHTML = "8,3 mio. tons plast er der ialt produceret på verdensplan. Kun 1 procent af plasten skønnes at være blevet genanvendt mere end 1 gang. Derfor er det meget vigtigt at sorterer plasten, og derfor bliver plast en af de typer affald Waste Treatment vil arbejde med."
 		
 					function NyTekst() {
 						if (tekst0 <= 0 || tekst1 >= 1) 
@@ -664,7 +664,7 @@ function skiftTilGenadvendelse() {
 				// Nustile billedet så det ligner billedet foran  //
 				setTimeout(nulstilTekst, 1000)
 					function nulstilTekst() {
-						tekst[0].innerHTML = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud <br><br> exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore <br><br> eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+						tekst[0].innerHTML = "8,3 mio. tons plast er der ialt produceret på verdensplan. Kun 1 procent af plasten skønnes at være blevet genanvendt mere end 1 gang. Derfor er det meget vigtigt at sorterer plasten, og derfor bliver plast en af de typer affald Waste Treatment vil arbejde med."
 				}
 		
 		
