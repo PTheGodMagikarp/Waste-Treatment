@@ -51,7 +51,36 @@ function skiftTilSkrald() {
 				}
 			}
 			
-				
+			
+				// Tekst i faktabox: Skifter den bargereste tekst, til at være den nye tekst  //
+				// Laver et interval der køre indtil teksterne er færdig med at skifte plads. Den bargeste tekst starter med at have 0 i opacity og det forreste har 1. Bargeste går op og forest ned  //
+				let tekst = document.getElementsByClassName("faktaboxIndhold");		
+				let tidNyTekst = setInterval(NyTekst, 100);
+				let tekst0 = 1;
+				let tekst1 = 0;
+		
+					tekst[1].innerHTML =  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud <br><br> exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore <br><br> eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+		
+					function NyTekst() {
+						if (tekst0 <= 0 || tekst1 >= 1) 
+						{
+							clearInterval(tidNyTekst);
+						}
+						else {
+							tekst0-= 0.1;
+							tekst1 += 0.1;
+							tekst[0].style.opacity = tekst0;
+							tekst[1].style.opacity = tekst1;
+						}
+					}
+		
+				// Nustile billedet så det ligner billedet foran  //
+				setTimeout(nulstilTekst, 1000)
+					function nulstilTekst() {
+						tekst[0].innerHTML = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud <br><br> exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore <br><br> eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+				}
+		
+		
 			//  Tjekker hvilken side brugeren kommer fra. Hvis brugeren kommer fra skrald, så betyder det soterings ikonerne og pile var gemt, og de skal derfor vises (langsomt): Viser ikoner fra Soterings siden: Går igennem alle elmenter der er tilæknyttet klassen "soteringsIkonerOgPile" og viser dem på skærmen  //
 			var sideOverskrift = document.getElementById("overskrift");
 			if (sideOverskrift.innerHTML.match("Sotering") ){
@@ -101,9 +130,53 @@ function skiftTilSkrald() {
 // Skifter til Soterings siden når brugeren trykker på soterings ikonet  //
 function skiftTilSotering() {
 	
+	
+	
 	// Finder hvilket billede af skrald der er på siden nu. Hvis det er det rigtige billede iforhold til at forsætte "spillet", så eksekveres koden //
 	let billedeAfSkrald = document.getElementsByClassName("skraldOverTid");
 		if (billedeAfSkrald[1].src.match("Billeder/Skrald-over-tid/Skrald.png") ){
+			
+			
+			
+			
+			
+			
+			// Tekst i faktabox: Skifter den bargereste tekst, til at være den nye tekst  //
+				// Laver et interval der køre indtil teksterne er færdig med at skifte plads. Den bargeste tekst starter med at have 0 i opacity og det forreste har 1. Bargeste går op og forest ned  //
+				let tekst = document.getElementsByClassName("faktaboxIndhold");		
+				let tidNyTekst = setInterval(NyTekst, 100);
+				let tekst0 = 1;
+				let tekst1 = 0;
+		
+					tekst[1].innerHTML = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud <br><br> exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore <br><br> eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+		
+					function NyTekst() {
+						if (tekst0 <= 0 || tekst1 >= 1) 
+						{
+							clearInterval(tidNyTekst);
+						}
+						else {
+							tekst0-= 0.1;
+							tekst1 += 0.1;
+							tekst[0].style.opacity = tekst0;
+							tekst[1].style.opacity = tekst1;
+						}
+					}
+		
+				// Nustile billedet så det ligner billedet foran  //
+				setTimeout(nulstilTekst, 1000)
+					function nulstilTekst() {
+						tekst[0].innerHTML = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud <br><br> exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore <br><br> eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+				}	
+			
+			
+			
+			
+			
+			
+			
+			
+			
 				
 			//  Tjekker hvilken side brugeren kommer fra. Hvis brugeren kommer fra skrald, så betyder det soterings ikonerne og pile var gemt, og de skal derfor vises (langsomt): Viser ikoner fra Soterings siden: Går igennem alle elmenter der er tilæknyttet klassen "soteringsIkonerOgPile" og viser dem på skærmen  //
 			var sideOverskrift = document.getElementById("overskrift");
@@ -213,6 +286,33 @@ function skiftTilIngenPlast() {
 				}
 	
 	
+				// Tekst i faktabox: Skifter den bargereste tekst, til at være den nye tekst  //
+				// Laver et interval der køre indtil teksterne er færdig med at skifte plads. Den bargeste tekst starter med at have 0 i opacity og det forreste har 1. Bargeste går op og forest ned  //
+				let tekst = document.getElementsByClassName("faktaboxIndhold");		
+				let tidNyTekst = setInterval(NyTekst, 100);
+				let tekst0 = 1;
+				let tekst1 = 0;
+		
+					tekst[1].innerHTML = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud <br><br> exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore <br><br> eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+		
+					function NyTekst() {
+						if (tekst0 <= 0 || tekst1 >= 1) 
+						{
+							clearInterval(tidNyTekst);
+						}
+						else {
+							tekst0-= 0.1;
+							tekst1 += 0.1;
+							tekst[0].style.opacity = tekst0;
+							tekst[1].style.opacity = tekst1;
+						}
+					}
+		
+				// Nustile billedet så det ligner billedet foran  //
+				setTimeout(nulstilTekst, 1000)
+					function nulstilTekst() {
+						tekst[0].innerHTML = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud <br><br> exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore <br><br> eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+				}
 	
 	
 	
@@ -337,6 +437,50 @@ function skiftTilIngenPlast() {
 					document.getElementById("faktabox").style.left = xVærdiFakta + "px";
 				}
 			}
+		
+		
+		
+		
+			
+			//*Tekst*//
+			// Flytter Teksten(erne). //
+			let leftTidTekstFlyt = setInterval(leftFlytTekst, 37);
+			var leftTekst = 49;
+
+				function leftFlytTekst() {
+					if (leftTekst == 70) 
+					{
+						clearInterval(leftTidTekstFlyt);
+					}
+					else {
+							leftTekst += 1;
+							tekst[0].style.marginLeft = leftTekst + "%";
+							tekst[1].style.marginLeft = leftTekst + "%";
+					}
+				}
+		
+			//*Tekst*//
+			// Flytter Teksten(erne). //
+			let rightTidTekstFlyt = setInterval(rightFlytTekst, 37);
+			var rightTekst = 22;
+
+				function rightFlytTekst() {
+					if (rightTekst == 1) 
+					{
+						clearInterval(rightTidTekstFlyt);
+					}
+					else {
+							rightTekst -= 1;
+							tekst[0].style.marginRight = rightTekst + "%";
+							tekst[1].style.marginRight = rightTekst + "%";
+					}
+				}
+		
+			
+	
+		
+		
+		
 	}
 
 }
@@ -393,6 +537,45 @@ function skiftTilOmdannelse() {
 						billedeAfPlast[1].src = "Billeder/Xd-billeder/Plast-klar-til-genbrug.png";
 						billedeAfPlast[1].style.opacity = 1;
 				}
+		
+		
+		
+		
+				// Tekst i faktabox: Skifter den bargereste tekst, til at være den nye tekst  //
+				// Laver et interval der køre indtil teksterne er færdig med at skifte plads. Den bargeste tekst starter med at have 0 i opacity og det forreste har 1. Bargeste går op og forest ned  //
+				let tekst = document.getElementsByClassName("faktaboxIndhold");		
+				let tidNyTekst = setInterval(NyTekst, 100);
+				let tekst0 = 1;
+				let tekst1 = 0;
+		
+					tekst[1].innerHTML = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud <br><br> exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore <br><br> eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+		
+					function NyTekst() {
+						if (tekst0 <= 0 || tekst1 >= 1) 
+						{
+							clearInterval(tidNyTekst);
+						}
+						else {
+							tekst0-= 0.1;
+							tekst1 += 0.1;
+							tekst[0].style.opacity = tekst0;
+							tekst[1].style.opacity = tekst1;
+						}
+					}
+		
+				// Nustile billedet så det ligner billedet foran  //
+				setTimeout(nulstilTekst, 1000)
+					function nulstilTekst() {
+						tekst[0].innerHTML = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud <br><br> exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore <br><br> eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+				}
+		
+		
+		
+		
+		
+		
+		
+		
 	}
 }
 	
@@ -456,7 +639,33 @@ function skiftTilGenadvendelse() {
 		
 		
 		
+				// Tekst i faktabox: Skifter den bargereste tekst, til at være den nye tekst  //
+				// Laver et interval der køre indtil teksterne er færdig med at skifte plads. Den bargeste tekst starter med at have 0 i opacity og det forreste har 1. Bargeste går op og forest ned  //
+				let tekst = document.getElementsByClassName("faktaboxIndhold");		
+				let tidNyTekst = setInterval(NyTekst, 100);
+				let tekst0 = 1;
+				let tekst1 = 0;
 		
+					tekst[1].innerHTML = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud <br><br> exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore <br><br> eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+		
+					function NyTekst() {
+						if (tekst0 <= 0 || tekst1 >= 1) 
+						{
+							clearInterval(tidNyTekst);
+						}
+						else {
+							tekst0-= 0.1;
+							tekst1 += 0.1;
+							tekst[0].style.opacity = tekst0;
+							tekst[1].style.opacity = tekst1;
+						}
+					}
+		
+				// Nustile billedet så det ligner billedet foran  //
+				setTimeout(nulstilTekst, 1000)
+					function nulstilTekst() {
+						tekst[0].innerHTML = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud <br><br> exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore <br><br> eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+				}
 		
 		
 		
@@ -574,6 +783,51 @@ function skiftTilGenadvendelse() {
 						document.getElementById("faktabox").style.left = xVærdiFakta + "px";
 					}
 				}
+		
+		
+		
+		
+			
+			//*Tekst*//
+			// Flytter Teksten(erne). //
+			let leftTidTekstFlyt = setInterval(leftFlytTekst, 37);
+			var leftTekst = 70;
+
+				function leftFlytTekst() {
+					if (leftTekst == 57) 
+					{
+						clearInterval(leftTidTekstFlyt);
+					}
+					else {
+							leftTekst -= 1;
+							tekst[0].style.marginLeft = leftTekst + "%";
+							tekst[1].style.marginLeft = leftTekst + "%";
+					}
+				}
+		
+			//*Tekst*//
+			// Flytter Teksten(erne). //
+			let rightTidTekstFlyt = setInterval(rightFlytTekst, 37);
+			var rightTekst = 1;
+
+				function rightFlytTekst() {
+					if (rightTekst == 13) 
+					{
+						clearInterval(rightTidTekstFlyt);
+					}
+					else {
+							rightTekst += 1;
+							tekst[0].style.marginRight = rightTekst + "%";
+							tekst[1].style.marginRight = rightTekst + "%";
+					}
+				}
+		
+			
+		
+		
+		
+		
+		
 	}
 }
 

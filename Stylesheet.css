@@ -223,6 +223,26 @@
 	height: 420px;
 }
 
+/* Teksten i fakta boxen */
+.faktaboxIndhold{
+	position: absolute;
+	
+	font-family: 'Palanquin', sans-serif;
+	
+	
+	 padding-left: 5%;                      /* Afstanden imellem højre side af tekstboksen og teksten */
+	padding-right: 5%;                     /* Afstanden imellem venstre side af tekstboksen og teksten */
+	padding-bottom:5%;                     /* Afstanden imellem bunden af tekstboksen og teksten */
+	
+    margin-top: -28%;                       /* Afstanden imellem boksen og toppen af hjemmesidens kant */
+	margin-right:22%;                      /* Afstanden imellem boksen og højre side af hjemmesidens kant */
+	margin-left:49%;                       /* afstand fra boxen og venstre side af hjemmesidens kant*/
+}
+/* Gemmer den bageregste tekst. Ellers vil teksten se fed ud */
+#faktaboxIndhold2{
+	opacity: 0;
+}
+
 .plastOverTid{
 	position: absolute;
 	top: 410px;
@@ -490,21 +510,31 @@
 	
 	/* Billede af: Produkterne der bliver til skrald, og så langsomt fjernet  */
 .skraldOverTid{
-	top: 175px;
+	top: 170px;
 	left: 70px;
 	
 	width: 280px;
 	height: 280px;
 }
 
-/* Faktaboxen der følger skraldets faser */
-#faktabox{
-	top: 540px;
-	left: 80px;
+	/* Faktaboxen der følger skraldets faser */
+	#faktabox{
+		top: 500px;
+		left: 30px;
 	
-	width: 250px;
-	height: 250px;
-}
+		width: 350px;
+		height: 350px;
+	}
+	
+	.faktaboxIndhold{
+		margin-top: -100%;                     
+		margin-right: 5%;                      
+		margin-left:  5%;  
+		font-size: 17px;
+		
+		font: normal normal normal 17px/22px 'Palanquin', sans-serif;
+
+	}
 	
 	/***                                                                           Tekst delen                                                                  ****/ 
 	
