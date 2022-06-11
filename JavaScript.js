@@ -148,7 +148,7 @@ function skiftTilSotering() {
 				let tekst0 = 1;
 				let tekst1 = 0;
 		
-					tekst[1].innerHTML = "På genbrugsstationerne kan man aflevere fire forskellige plasttyper: Hård PVC, havemøbler, plastfolie og hård plast. Plasten sorteres og pakkes. Hver af plasttyperne sendes videre til forskellige anlæg, alt efter hvilken plasttype det anlæg specialiserer sig i. Plasten vaskes, tørres og findeles til granulat, som man kan lave nyt plast af."
+					tekst[1].innerHTML = "papir og pap køres til genbrugspladsen og bliver samlet op, hvor det presses i baller og sendes videre til genanvendelse i papirindustrien. Plast og metal køres til sorteringsanlægget, hvor det opdeles i forskellige plast- og metaltyper, før det sendes videre til genanvendelse."
 		
 					function NyTekst() {
 						if (tekst0 <= 0 || tekst1 >= 1) 
@@ -311,7 +311,7 @@ function skiftTilIngenPlast() {
 				// Nustile billedet så det ligner billedet foran  //
 				setTimeout(nulstilTekst, 1000)
 					function nulstilTekst() {
-						tekst[0].innerHTML = "På genbrugsstationerne kan man aflevere fire forskellige plasttyper: Hård PVC, havemøbler, plastfolie og hård plast. Plasten sorteres og pakkes. Hver af plasttyperne sendes videre til forskellige anlæg, alt efter hvilken plasttype det anlæg specialiserer sig i. Plasten vaskes, tørres og findeles til granulat, som man kan lave nyt plast af."
+						tekst[0].innerHTML = "papir og pap køres til genbrugspladsen og bliver samlet op, hvor det presses i baller og sendes videre til genanvendelse i papirindustrien. Plast og metal køres til sorteringsanlægget, hvor det opdeles i forskellige plast- og metaltyper, før det sendes videre til genanvendelse"
 				}
 	
 	
