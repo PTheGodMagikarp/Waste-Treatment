@@ -145,19 +145,19 @@ function skiftTilSotering() {
 				// Laver et interval der køre indtil teksterne er færdig med at skifte plads. Den bargeste tekst starter med at have 0 i opacity og det forreste har 1. Bargeste går op og forest ned  //
 				let tekst = document.getElementsByClassName("faktaboxIndhold");		
 				let tidNyTekst = setInterval(NyTekst, 100);
-				let tekst0 = 1;
-				let tekst1 = 0;
+				let tekst0 = 0;
+				let tekst1 = 1;
 		
-					tekst[1].innerHTML = "Papir og pap køres til genbrugspladsen og bliver samlet op, hvor det presses i baller og sendes videre til genanvendelse i papirindustrien. Plast og metal køres til sorteringsanlægget, hvor det opdeles i forskellige plast- og metaltyper, før det sendes videre til genanvendelse."
+					tekst[0].innerHTML = "Papir og pap køres til genbrugspladsen og bliver samlet op, hvor det presses i baller og sendes videre til genanvendelse i papirindustrien. Plast og metal køres til sorteringsanlægget, hvor det opdeles i forskellige plast- og metaltyper, før det sendes videre til genanvendelse."
 		
 					function NyTekst() {
-						if (tekst0 <= 0 || tekst1 >= 1) 
+						if (tekst1 <= 0 || tekst0 >= 1) 
 						{
 							clearInterval(tidNyTekst);
 						}
 						else {
-							tekst0-= 0.1;
-							tekst1 += 0.1;
+							tekst0+= 0.1;
+							tekst1 -= 0.1;
 							tekst[0].style.opacity = tekst0;
 							tekst[1].style.opacity = tekst1;
 						}
@@ -166,7 +166,7 @@ function skiftTilSotering() {
 				// Nustile billedet så det ligner billedet foran  //
 				setTimeout(nulstilTekst, 1000)
 					function nulstilTekst() {
-						tekst[0].innerHTML = "Papir og pap køres til genbrugspladsen og bliver samlet op, hvor det presses i baller og sendes videre til genanvendelse i papirindustrien. Plast og metal køres til sorteringsanlægget, hvor det opdeles i forskellige plast- og metaltyper, før det sendes videre til genanvendelse."
+						tekst[1].innerHTML = "Papir og pap køres til genbrugspladsen og bliver samlet op, hvor det presses i baller og sendes videre til genanvendelse i papirindustrien. Plast og metal køres til sorteringsanlægget, hvor det opdeles i forskellige plast- og metaltyper, før det sendes videre til genanvendelse."
 				}	
 			
 			
@@ -311,7 +311,7 @@ function skiftTilIngenPlast() {
 				// Nustile billedet så det ligner billedet foran  //
 				setTimeout(nulstilTekst, 1000)
 					function nulstilTekst() {
-						tekst[0].innerHTML = "papir og pap køres til genbrugspladsen og bliver samlet op, hvor det presses i baller og sendes videre til genanvendelse i papirindustrien. Plast og metal køres til sorteringsanlægget, hvor det opdeles i forskellige plast- og metaltyper, før det sendes videre til genanvendelse"
+						tekst[0].innerHTML = "På genbrugsstationerne kan man aflevere fire forskellige plasttyper: Hård PVC, havemøbler, plastfolie og hård plast. Plasten sorteres og pakkes. Hver af plasttyperne sendes videre til forskellige anlæg, alt efter hvilken plasttype det anlæg specialiserer sig i. Plasten vaskes, tørres og findeles til granulat, som man kan lave nyt plast af. "
 				}
 	
 	
@@ -545,19 +545,19 @@ function skiftTilOmdannelse() {
 				// Laver et interval der køre indtil teksterne er færdig med at skifte plads. Den bargeste tekst starter med at have 0 i opacity og det forreste har 1. Bargeste går op og forest ned  //
 				let tekst = document.getElementsByClassName("faktaboxIndhold");		
 				let tidNyTekst = setInterval(NyTekst, 100);
-				let tekst0 = 1;
-				let tekst1 = 0;
+				let tekst0 = 0;
+				let tekst1 = 1;
 		
-					tekst[1].innerHTML = "Godt 30 % af plastaffaldet indsamles til genanvendelse, heraf skønnes mindre end 50 % reelt genanvendt. En del af plastaffaldet, ca 1,5-4 % af verdens plastproduktion, havner i vores have. I havet ender plastaffaldet på verdens strande, nedbrydes til mikroplast eller danner store 'øer' af plast."
+					tekst[0].innerHTML = "Godt 30 % af plastaffaldet indsamles til genanvendelse, heraf skønnes mindre end 50 % reelt genanvendt. En del af plastaffaldet, ca 1,5-4 % af verdens plastproduktion, havner i vores have. I havet ender plastaffaldet på verdens strande, nedbrydes til mikroplast eller danner store 'øer' af plast."
 		
 					function NyTekst() {
-						if (tekst0 <= 0 || tekst1 >= 1) 
+						if (tekst1 <= 0 || tekst0 >= 1) 
 						{
 							clearInterval(tidNyTekst);
 						}
 						else {
-							tekst0-= 0.1;
-							tekst1 += 0.1;
+							tekst0+= 0.1;
+							tekst1 -= 0.1;
 							tekst[0].style.opacity = tekst0;
 							tekst[1].style.opacity = tekst1;
 						}
@@ -566,7 +566,7 @@ function skiftTilOmdannelse() {
 				// Nustile billedet så det ligner billedet foran  //
 				setTimeout(nulstilTekst, 1000)
 					function nulstilTekst() {
-						tekst[0].innerHTML = "Godt 30 % af plastaffaldet indsamles til genanvendelse, heraf skønnes mindre end 50 % reelt genanvendt. En del af plastaffaldet, ca 1,5-4 % af verdens plastproduktion, havner i vores have. I havet ender plastaffaldet på verdens strande, nedbrydes til mikroplast eller danner store 'øer' af plast."
+						tekst[1].innerHTML = "Godt 30 % af plastaffaldet indsamles til genanvendelse, heraf skønnes mindre end 50 % reelt genanvendt. En del af plastaffaldet, ca 1,5-4 % af verdens plastproduktion, havner i vores have. I havet ender plastaffaldet på verdens strande, nedbrydes til mikroplast eller danner store 'øer' af plast."
 				}
 		
 		
