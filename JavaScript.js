@@ -505,11 +505,7 @@ function skiftTilOmdannelse() {
 		document.getElementById("overskrift").innerHTML = "Omdannelse"
 		
 		
-		// Gemmer ikoner fra Soterings siden: Går igennem alle elmenter der er tilæknyttet klassen "soteringsIkonerOgPile" og gemmer dem. //
-			var soteringsElementer = document.getElementsByClassName("soteringsIkonerOgPile");
-				for (var i=1 ; i<soteringsElementer.length; i++){
-  					soteringsElementer[i].style.display = "none";
-				}
+		
 		
 	// Plast:  det bargereste billede, til det nye billede  //
 				// Laver et interval der køre indtil billederne er færdig med at skifte plads. Det bargeste billede starter med at have 0 i opacity og det forreste har 1. Bargeste går op og forest ned  //
@@ -574,6 +570,34 @@ function skiftTilOmdannelse() {
 		
 		
 		
+			
+				// Fjerne alle soterings ikoner pånær plast   //
+				let tidSoteringsElementer = setInterval(visSoteringsElementer, 50);
+				let soteringsElementer = document.getElementsByClassName("soteringsIkonerOgPile");
+				let opacitySoteringsElementer = 1;
+			
+			
+				function visSoteringsElementer() {
+					if (opacitySoteringsElementer <= 0) 
+						{
+							clearInterval(tidSoteringsElementer);
+							soteringsElementer[2].style.display = "none";
+							soteringsElementer[3].style.display = "none";
+							soteringsElementer[4].style.display = "none";
+							soteringsElementer[5].style.display = "none";
+						}
+					else {
+						opacitySoteringsElementer-= 0.1;
+
+					
+						soteringsElementer[2].style.opacity = opacitySoteringsElementer;
+						soteringsElementer[3].style.opacity = opacitySoteringsElementer;
+						soteringsElementer[4].style.opacity = opacitySoteringsElementer;
+						soteringsElementer[5].style.opacity = opacitySoteringsElementer;
+					
+					}
+				}
+			
 		
 		
 	}
